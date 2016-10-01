@@ -1,0 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.column-left {
+  width: 200px;
+  height: 500px;
+  border: 1px solid black;
+  float: left;
+
+}
