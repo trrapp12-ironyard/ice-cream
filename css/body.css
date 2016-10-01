@@ -10,3 +10,12 @@
   float: left;
 
 }
+
+#logo {
+  font-family: "KR Sweet Tooth";
+  font-size: 150px;
+  margin:0px;
+  padding: 0px;
+  line-height: 10px;
+
+}

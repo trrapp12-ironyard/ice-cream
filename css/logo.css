@@ -3,10 +3,6 @@
   padding: 0px;
 }
 
-p {
-  font-family:
-}
-
 h1 {
   font-family: 'Josefin Slab', serif;
   font-weight: bolder;
@@ -21,7 +17,7 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 1px 1px 20px black;
-  line-height: 120px;
+  line-height: 220px;
 }
 
 .home {
@@ -32,4 +28,12 @@ h1 {
   height: 40px;
   z-index: 200;
   position: relative;
+}
+
+#logo {
+  font-family: "KR Sweet Tooth";
+  font-size: 150px;
+  margin:-10px;
+  padding: 0px;
+  line-height: 10px;
 }
