@@ -4,9 +4,20 @@
 }
 
 .column-left {
-  width: 200px;
-  height: 500px;
+  width: 25em;
+  height: 1000px;
   border: 1px solid black;
   float: left;
+  padding-left: 30px;
+}
 
+.contact {
+  margin: 3em;
+  line-height:1;
+}
+
+.sidebar {
+  display: inline-block;
+  font-size: 1.25em;
+  font-family: 'Quicksand', sans-serif;
 }

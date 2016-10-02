@@ -46,7 +46,8 @@ li {
   height: 5.25px;
   margin: 0px;
   display: inline-block;
-  text-transform: uppercase;;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
 }
 /*.nav-li-left > li {
   padding-top: 40px;
