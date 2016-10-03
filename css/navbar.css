@@ -11,8 +11,8 @@
   padding-top: 26px;
   /*padding-bottom: 30px;
   padding-right: 30px;*/
-  width:20px;
-  height: 42px;
+  width:1.25em;
+  height: 2.625em;
   text-align: center;
   margin: 0px;
   color: gray;
@@ -29,14 +29,14 @@
   padding-right: 5em;
   padding-bottom: 2em;
   padding-left: 5em;*/
-  width:120px;
-  height: 42px;
+  width:7.50em;
+  height: 2.625em;
 }
 
 ul {
   margin: 0px;
   padding: 0px;
-  clear: right;
+  clear: left;
 }
 
 li {
@@ -74,7 +74,7 @@ body {
   padding-left: 0px;
   margin: 0px;
   float: right;
-  width: 30.75%;
+  max-width: 40%;
 }
 
 .minus-padding {
