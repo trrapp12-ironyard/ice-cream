@@ -4,7 +4,7 @@
 }
 
 .column-left {
-  width: 25em;
+  width: 40%;
   height: 1000px;
   border: 1px solid black;
   float: left;
@@ -20,4 +20,27 @@
   display: inline-block;
   font-size: 1.25em;
   font-family: 'Quicksand', sans-serif;
+  padding: 30px;
+}
+
+.table {
+  width: 100%;
+  padding: 1em;
+}
+
+.column-right {
+  width: 40%;
+  border: 1px, solid, black;
+  display: inline-block;
+  font-size: 1.25em;
+  font-family: 'Quicksand', sans-serif;
+  float:right;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #ccc;
+}
+
+tr, td {
+  padding-right: 30px;
 }
