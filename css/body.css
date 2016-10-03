@@ -41,6 +41,10 @@ tbody tr:nth-child(odd) {
    background-color: #ccc;
 }
 
-tr, td {
-  padding-right: 30px;
+td th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+  border-collapse: separate;
+	border-spacing: 5px 10px;
 }
