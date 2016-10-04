@@ -97,3 +97,7 @@ body {
   width: auto;
   position: relative;
 }
+
+#heading {
+  font-size: .2rem;
+}

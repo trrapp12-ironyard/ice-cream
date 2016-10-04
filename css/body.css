@@ -35,6 +35,7 @@
   width: 100%;
   margin-left: 0px;
   border-left: 0px;
+  padding-right: 2em;
 }
 
 .column-right {
@@ -59,5 +60,33 @@ tr th {
 td {
   padding: 1.25em;
   min-width: 8em;
+  text-align: center;
+}
 
+.employees {
+  width: 60%;
+  margin: auto;
+  display: block;
+  clear: right;
+  position: relative;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.grid {
+  display: block;
+  float: left;
+  width: 13em;
+  height: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding:1em;
+}
+
+.address {
+  background-color: #F5F5F5;
 }
