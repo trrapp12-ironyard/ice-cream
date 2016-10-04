@@ -20,7 +20,7 @@
   display: inline-block;
   font-size: 1.75em;
   font-family: 'Quicksand', sans-serif;
-  padding: 0em 1.875em 1.875em 1.875em;
+  padding: 0em 1.875em 2.62em 1.875em;
   margin-top: 0px;
 }
 
@@ -28,6 +28,7 @@
   font-size: 2em;
   line-height: normal;
   margin-top: 0em;
+  padding: 1em;
 
 }
 
@@ -46,7 +47,7 @@
   float: right;
 }
 
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(2n+2) {
    background-color: #ccc;
 }
 
@@ -55,6 +56,8 @@ tr th {
   min-width: 8em;
   font-weight: bolder;
   font-size: 1.3em;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 td {
@@ -89,4 +92,8 @@ td {
 
 .address {
   background-color: #F5F5F5;
+}
+
+#header-modified {
+  background-color: white;
 }
