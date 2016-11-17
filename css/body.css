@@ -1,4 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
+h2 {
+  text-align: center;
+  /*width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;*/
+}
+
+.center {
+  width: 60%;
+  height: : auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+  top: 150px;
+}
+
+.empty {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  border: 0;
+  float: left;
+}
+
+.employees {
+  font-size: 4em;
+  position: relative;
+  top: 2em;
+  width: 100%;
+  display: block;
+  max-height: 4.1em;
+  display: block;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.grid {
+  display: inline-block;
+  width: 13em;
+  height: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding:1em;
+  float: left;
+}
 
 .column-left {
   width: 40%;
@@ -63,34 +119,18 @@ td {
   text-align: center;
 }
 
-.employees {
-  width: 60%;
-  margin: auto;
-  display: block;
-  clear: right;
-  position: relative;
-  text-align: center;
-}
-
-.circle {
-  border-radius: 100%;
-}
-
-.grid {
-  display: block;
-  float: left;
-  width: 13em;
-  height: auto;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  padding:1em;
-}
-
 .address {
   background-color: #F5F5F5;
 }
 
 #header-modified {
   background-color: white;
+}
+
+.row {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
 }
