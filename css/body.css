@@ -8,10 +8,6 @@ body {
 
 h2 {
   text-align: center;
-  /*width: 40%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;*/
 }
 
 .center {
@@ -31,7 +27,7 @@ h2 {
   float: left;
 }
 
-.employees {
+#employees {
   font-size: 4em;
   position: relative;
   top: 2em;
@@ -39,6 +35,13 @@ h2 {
   display: block;
   max-height: 4.1em;
   display: block;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 20px black;
+  line-height: 220px;
 }
 
 .circle {
@@ -135,21 +138,32 @@ td {
   display: block;
 }
 
-footer {
-  position: relative;
-  display:inline-block;
+.footer {
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
+  position: relative;
+  margin-left: auto;
   font-family: 'Quicksand', sans-serif;
   line-height: 250%;
-
+  box-sizing: border-box;
 }
 
 .footer-li {
   padding: 0;
+  clear: both;
+  box-sizing: border-box;
 }
 
 .footer-p {
   text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-row {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: inline-block;
 }
