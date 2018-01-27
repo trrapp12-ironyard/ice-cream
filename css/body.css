@@ -172,3 +172,13 @@ td {
   margin-left: auto;
   margin-right: auto;
 }
+
+.footer-row ul {
+    padding: 0px;
+    clear: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 59%;
+    margin-top: 0px;
+    padding-top: 45px;
+}
