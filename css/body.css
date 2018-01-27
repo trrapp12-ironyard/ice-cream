@@ -11,12 +11,12 @@ h2 {
 }
 
 .center {
-  width: 60%;
-  height: : auto;
-  margin-left: 20%;
-  margin-right: 20%;
+  height: auto;
   position: relative;
   top: 150px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .empty {
@@ -46,17 +46,17 @@ h2 {
 
 .circle {
   border-radius: 100%;
+  width: 100%;
 }
 
 .grid {
   display: inline-block;
-  width: 13em;
+  width: 24%;
   height: auto;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  padding:1em;
+  margin-top: 4em;
+  padding-left: 2em;
   float: left;
+  padding-right: 2em;
 }
 
 .column-left {
@@ -142,7 +142,6 @@ td {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  margin-left: auto;
   font-family: 'Quicksand', sans-serif;
   line-height: 250%;
   box-sizing: border-box;
