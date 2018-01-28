@@ -157,13 +157,14 @@ body {
     line-height: 220px;
   }
 
-  div .column-left {
+  div.column-left {
     width: 100%;
     margin-right: auto;
     min-height: fit-content;
     max-height: 80em;
     float: left;
     margin-left: auto;
+    padding: 0;
 }
   .sidebar {
     display: inline-block;
@@ -221,4 +222,42 @@ body {
   ul#footer-ul > li.footer-li {
     width: 100%;
   }
+  tbody > tr > td {
+    padding: 0;
+    min-width: 8em;
+    text-align: center;
+  }
+  tr th {
+    display: none;
+  }
+  h2#employees {
+      font-size: 3em;
+      position: relative;
+      top: 1.5em;
+      width: 100%;
+      display: block;
+      max-height: 4.1em;
+      display: block;
+      font-family: 'Josefin Slab', serif;
+      font-weight: bolder;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      text-shadow: 1px 1px 20px black;
+      line-height: 20px;
+  }
+
+  ul#footer-ul > li.footer-li {
+    line-height: 120%;
+    width: 20%;
+    padding: 2px;
+  }
+
+  ul#footer-ul > li.footer-li > a {
+    line-height: 120%;
+    width: 100%;
+    font-size: 0.5em;
+    text-align: center;
+  }
+
 }
