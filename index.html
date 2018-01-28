@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/small.css" media="(max-width: 900px)" title="no title">
+  <!-- <link rel="stylesheet" href="css/small.css" media="(max-width: 479px)" title="no title"> -->
   <style type="text/css" media="screen, print">
   @font-face {
     font-family: "KR Sweet Tooth";
@@ -19,7 +19,7 @@
   </style>
 </head>
 <body>
-  <nav class="minus-padding">
+  <!-- <nav class="minus-padding">
     <div class="align-left">
       <ul>
         <li class="nav-li-left"><a href=""> Home </a></li>
@@ -31,6 +31,17 @@
       <ul>
         <li class="nav-li-right">Parties</li>
         <li class="nav-li-right">Cakes</li>
+      </ul>
+    </div>
+  </nav> -->
+  <nav id="nav" class="minus-padding">
+    <div class="align-left">
+      <ul>
+        <li class="nav-li-left"><a href="#"> Home </a></li>
+        <li class="nav-li-left">Menu <a href="#"></a></li>
+        <li class="nav-li-left">Contact <a href="#"></a></li>
+        <li class="nav-li-left">Parties <a href="#"></a></li>
+        <li class="nav-li-left">Cakes <a href="#"></a></li>
       </ul>
     </div>
   </nav>
@@ -339,4 +350,11 @@
 
   </div>
   </body>
+  <script>
+  function ready() {
+    // alert("javascript is working")
+  }
+  document.addEventListener("DOMContentLoaded", ready);
+  // document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  </script>
 </html>
