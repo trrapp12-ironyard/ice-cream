@@ -44,7 +44,7 @@
         <li class="nav-li-left"><a href="#"> Home </a></li>
         <li class="nav-li-left"><a href="#menu"> Menu </a></li>
         <li class="nav-li-left"><a href="#employees">Employees</a></li>
-        <li class="nav-li-left"><a href="#" onclick="resizeWinTo()">View Mobile</a></li>
+        <li class="nav-li-left"><a href="" onclick="newWindow()">View Mobile</a></li>
         <li class="nav-li-left"><a id="demo" href="#" >Contact</a></li>
       </ul>
     </div>
@@ -91,7 +91,10 @@
             link
           </th>
         </tr>
-        <tr>
+        <tr id="icecream_flavors">
+
+        </tr>
+        <!-- <tr>
           <td>
             Almond Divinity
           </td>
@@ -295,7 +298,7 @@
           <td>
             <a href="https://en.wikipedia.org/wiki/Ice_cream">History</a>
           </td>
-        </tr>
+        </tr> -->
       </table>
     </div>
     <div class="empty">
@@ -307,7 +310,10 @@
     <div style="width: 100%; height: 10px">
 
     </div>
+
+    <div class="row-full">
       <div class="center">
+        <!-- grids  -->
         <div class="grid">
           <img class="circle" src="images/bow-tie-businessman-fashion-man.jpg" alt="boss image" />
           <a href="#"><p>Meet Ben: An impulsive Vanilla lover.</p></a>
@@ -332,6 +338,8 @@
           <img class="circle" src="images/pexels-photo.jpg" alt="little girl surprised"/>
           <a href="#"><p>Meet H. Glasse: An aggressive Rocky Roader. </p></a>
         </div>
+
+
         <footer class="footer">
           <div class="footer-row">
             <ul id="footer-ul">
@@ -351,16 +359,12 @@
         </footer>
 
       </div>
+    </div>
+
 
   </div>
   </body>
-  <script>
-  function ready() {
-    // alert("javascript is working")
-  }
-  document.addEventListener("DOMContentLoaded", ready);
-  // document.getElementById("demo").innerHTML = "Hello JavaScript!";
-  </script>
+  <script src="src/menu.js"
   <script>
   // Select all links with hashes
   $('a[href*="#"]')
@@ -400,9 +404,16 @@
     });
   </script>
   <script>
-    function resizeWinTo() {
-      window.resizeTo(460, 853);
-      window.focus();
-  }
+    function newWindow() {
+      newwindow = window.open('https://trrapp12.github.io/ice-cream/', '', 'width=680,height=680')
+
+      function resizeWinTo() {
+        newwindow.resizeTo(20, 20);
+        newwindow.focus();
+        alert("inner function called")
+      };
+      resizeWinTo();
+    };
+
   </script>
 </html>
