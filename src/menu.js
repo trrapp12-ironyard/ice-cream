@@ -29,7 +29,12 @@ var Menu = {
 
 window.onload = function () {
   // calls the keys property of the Object to find Menu and it's associated properties, and then uses the sort method to compare them and sort them alphabetically
-  const sortedFlavors = Object.keys(Menu).sort(function(a, b) {return - (name[a] - name[b])});
+  const sortedFlavors = Object.keys(Menu).sort((a, b) => - (name[a] - name[b]));
+  const table = document.getElementById('table')
+  sortedFlavors.map((flavor, i) => {
+    var row = `row${i}`;
+    row = table.insertRow(i + 1)
+    row.innerHTML = `<td>${sortedFlavors[i]}</td><td>$.99</td><td><a href="https://en.wikipedia.org/wiki/Ice_cream">History</a></td>`;
+  })
 
-  document.querySelector('#icecream_flavors').innerHTML = sortedFlavors.map(function icecream_flavor(currentValue, index, array) { return '<td>${currentValue}</td><td>$.99</td><td><a href="https://en.wikipedia.org/wiki/Ice_cream">History</a></td>'}).join('')
 };
