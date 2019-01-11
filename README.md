@@ -23,9 +23,9 @@
   * a link to wikipedia for that flavor
 - [x] See every other flavor on the menu alternate its background color (commonly called "zebra striping")
 - [x] Restrictions:
- - any libraries, extension, modules, or frameworks other than normalize.css and font-awesome flexbox
- - animation - to be clear I’m talking about CSS3, canvas, and their ilk; you may use animated gifs, but keep them portfolio professional if you do.
- - tables for layout of anything other than actual tabular data (depending on your design the ice cream flavors, whether they’re sugar free or not, and their calories may qualify as tabular data)
+  * any libraries, extension, modules, or frameworks other than normalize.css and font-awesome flexbox
+  * animation - to be clear I’m talking about CSS3, canvas, and their ilk; you may use animated gifs, but keep them portfolio professional if you do.
+  * tables for layout of anything other than actual tabular data (depending on your design the ice cream flavors, whether they’re sugar free or not, and their calories may qualify as tabular data)
 - [x] Use ```<aside>``` and CSS to create a left side-column with margins.
 - [x] Mobile Responsive design
 - [x] Social Media links
