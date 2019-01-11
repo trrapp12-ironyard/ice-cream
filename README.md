@@ -7,7 +7,7 @@
 <br/>
 
 
-###The requirements for this project were:
+### The requirements for this project were:
 ---
 
 - [x] Build a homepage for your local ice cream shop. 
@@ -32,13 +32,13 @@
 <br/>
 <br/>
 
-###Project published at: 
+### Project published at: 
 ---
 
 [Betty's Ice Cream Parlor](https://trrapp12-ironyard.github.io/ice-cream/)
 <br/>
 <br/>
-###More Information:
+### More Information:
 ---
 
 \**For more information see my [Portfolio] (), [Webpage](http://web-karma.org),[LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), [Blog](http://web-karma.net), or return to my [Github](https://github.com/trrapp12)*
