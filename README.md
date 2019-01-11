@@ -8,6 +8,9 @@
 ### This project demonstrates:
 ---
 
+- [x] Initiative.  
+  * While the original project indicated the use of html tables to create some tabular data, I wanted to challenge myself so I went in afterwards and refactored the code to create a javascript object with the name and the individual data for each object and the used a Javascript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
+  
 ### The requirements for this project were:
 ---
 
