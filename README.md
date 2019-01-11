@@ -7,20 +7,20 @@
 <br/>
 
 
-###This project demonstrates the following:
+###The requirements for this project were:
 ---
 
 - [x] Build a homepage for your local ice cream shop. 
 - [x] Initialize and push/pull to a GitHub repository.
 - [x] Regular commits and use proper semantic HTML tags.
 - [x] Include 
-- the shop's name
-- a brief history (use lorem ipsum)
-- a logo (any image you can find online)
-- the store's hours and contact information
-- flavors available (list at least 5 and no more than 42) with:
- - name, calorie count, and whether it is sugar free or not
- - a link to wikipedia for that flavor
+  * the shop's name
+  * a brief history (use lorem ipsum)
+  * a logo (any image you can find online)
+  * the store's hours and contact information
+  * flavors available (list at least 5 and no more than 42) with:
+  * name, calorie count, and whether it is sugar free or not
+  * a link to wikipedia for that flavor
 - [x] See every other flavor on the menu alternate its background color (commonly called "zebra striping")
 - [x] Restrictions:
  - any libraries, extension, modules, or frameworks other than normalize.css and font-awesome flexbox
