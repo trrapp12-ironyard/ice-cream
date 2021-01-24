@@ -20,8 +20,8 @@
   * This began as an assignment from Iron Yard coding camp. 
   
   * The original project required the use of html tables to create tabular data.  I completed the project, then came back to see if I could challenge mysel.  So I refactored the code to:
- [x] create a javascript object with the name and the individual data for each object
- [x] create a Javascript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
+ - [x] create a javascript object with the name and the individual data for each object
+ - [x] create a Javascript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
   
 ### The original requirements for this project were:
 ---
