@@ -9,7 +9,7 @@
 ### Project published at: 
 ---
 
-[Sundae Worship](https://trrapp12-ironyard.github.io/ice-cream/)
+[Sundae Worship](https://trrapp12.github.io/Sundae-Worship/)
 <br/>
 <br/>
 
