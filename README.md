@@ -1,4 +1,4 @@
-# Betty's Ice Cream Parlor
+# Sundae Worship
 ---
 
 ![d3_d4_conversion screen shot](https://cloud.githubusercontent.com/assets/11747875/20286878/3dfed1d8-aa86-11e6-99dd-981ea0a6db9f.png)
