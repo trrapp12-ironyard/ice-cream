@@ -19,9 +19,9 @@
 - [x] Initiative.  
   * This began as an assignment from Iron Yard coding camp. 
   
-  * The original project required the use of html tables to create tabular data.  I completed the project, then came back to see if I could challenge mysel.  So I refactored the code to:
- - [x] create a javascript object with the name and the individual data for each object
- - [x] create a Javascript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
+  * The original project required the use of html tables to create tabular data.  I completed the project, then came back to see if I could challenge myself.  So I refactored the code to:
+ - [x] create a JavaScript object with the name and the individual data for each object
+ - [x] create a JavaScript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
   
 ### The original requirements for this project were:
 ---
@@ -36,7 +36,7 @@
   * the store's hours and contact information
   * flavors available (list at least 5 and no more than 42) with:
   * name, calorie count, and whether it is sugar free or not
-  * a link to wikipedia for that flavor
+  * a link to Wikipedia for that flavor
 - [x] See every other flavor on the menu alternate its background color (commonly called "zebra striping")
 - [x] Restrictions:
   * don't use any libraries, extension, modules, or frameworks other than normalize.css and font-awesome flexbox
@@ -50,4 +50,4 @@
 
 ---
 ### More Information: 
-\**For more information see my [Portfolio] (), [Webpage](http://web-karma.org),[LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), [Blog](http://web-karma.net), or return to my [Github](https://github.com/trrapp12)*
+\**For more information see [Webpage](http://web-karma.org),[LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), [Blog](http://web-karma.net), or return to my [Github](https://github.com/trrapp12)*
