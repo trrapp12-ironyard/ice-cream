@@ -9,7 +9,7 @@
 ### Project published at: 
 ---
 
-[Betty's Ice Cream Parlor](https://trrapp12-ironyard.github.io/ice-cream/)
+[Sundae Worship](https://trrapp12-ironyard.github.io/ice-cream/)
 <br/>
 <br/>
 
