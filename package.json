@@ -1,0 +1,31 @@
+{
+  "name": "sundae-worship",
+  "version": "1.0.0",
+  "description": "a basic web-page portfolio project with an ice cream theme",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trrapp12/Sundae-Worship.git"
+  },
+  "keywords": [
+    "portfolio",
+    "Trevor",
+    "Rapp",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "responsive",
+    "design",
+    "Responsive",
+    "Design"
+  ],
+  "author": "Trevor Rapp",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/trrapp12/Sundae-Worship/issues"
+  },
+  "homepage": "https://github.com/trrapp12/Sundae-Worship#readme"
+}
