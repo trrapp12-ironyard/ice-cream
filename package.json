@@ -4,7 +4,8 @@
   "description": "a basic web-page portfolio project with an ice cream theme",
   "main": "app.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start-server" : "node app.js"
   },
   "repository": {
     "type": "git",
