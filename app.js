@@ -1,54 +1,24 @@
-// const http = require('http');
-// const fs = require('fs');
-// const port = 8080;
-//
-// const server = http.createServer(function (req, res) {
-//   res.writeHead(200, { 'Content-Type' : 'text/html'})
-//   fs.readFile('index.html', function (error, data) {
-//     if (error) {
-//       res.writeHead(404)
-//       res.write('Error: File Not Found')
-//     } else {
-//       res.write(data)
-//     }
-//     res.end()
-//   })
-// })
-//
-// server.listen(port, function (error) {
-//   if (error) {
-//    console.log('there was an error: ' + error)
-//  } else {
-//    console.log("server is listening on port: " + port)
-//  }
-// })
-
-
-//third party express
+//third party package express. Express will handle parsing server requests
 const express = require('express');
 //import body parser
 const bodyParser = require('body-parser');
-//create express app
+//create express app.  Express outputs a function with will build an object.  We have to instantiate that object to build the app
 const app = express();
-//this is middle ware to parse the body for POST requests.  It will not work on files or JSON
+//import personal middleware with router objects we made in our admin.js file
+const adminRoutes = require('./routes/admin.js');
+
+const shopRoutes = require('./routes/shop.js');
+
+const indexRoutes = require('./routes/index.js')
+//this is middle ware to parse the body for POST requests.  It will not work on files or JSON.  Notice we are using the app object now and using dot notation to call the needed methods
 app.use(bodyParser.urlencoded({extended: false}));
 
-//add middleware here by calling the use() method
-app.use('/add-product', (req, res, next) => {
-  res.send('<form action="/product" method="POST"><input type="text" name="title" <button type="submit">Add Product</button></form>')
-})
+app.use(adminRoutes);
+app.use(shopRoutes);
+app.use(indexRoutes);
 
-app.use('/', (req, res, next) => {
-  next();
-})
-
-app.post('/product', (req, res, next) => {
-  console.log(req.body);
-  res.redirect('/')
-})
-
-app.use('/', (req, res, next) => {
-  res.send()
+app.use((req, res, next) => {
+  res.status(404).send(<h1>404: page not Found</h1>)
 })
 
 app.listen(8080);

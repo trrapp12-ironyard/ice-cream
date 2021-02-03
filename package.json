@@ -1,6 +1,6 @@
 {
   "name": "sundae-worship",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "a basic web-page portfolio project with an ice cream theme",
   "main": "app.js",
   "scripts": {
