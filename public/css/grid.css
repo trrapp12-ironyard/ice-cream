@@ -1,7 +1,7 @@
 /* Normalize.css */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   padding: 0;
   position: relative;
   height: 100%;
-  min-width: : 100%;
+  min-width: 100%;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -46,7 +46,7 @@ h2 {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0px;
+  padding: 0;
   height: 40px;
   z-index: 200;
   position: relative;
@@ -56,7 +56,7 @@ h2 {
   font-family: "KR Sweet Tooth";
   font-size: 150px;
   margin:-10px;
-  padding: 0px;
+  padding: 0;
   line-height: 10px;
 }
 /* navbar.css */
@@ -64,19 +64,17 @@ h2 {
 
 .nav-li-left {
   display: inline-block;
-  float: left;
   text-decoration: none;
   padding-top: 26px;
   height: 2.625em;
   text-align: center;
-  margin: 0px;
+  margin: 0;
   color: gray;
   width:19.8%;
 }
 
 .nav-li-right {
   display: inline-block;
-  float: left;
   text-decoration: none;
   padding-top: 1.6em;
   padding-left: 2.692em;
@@ -85,8 +83,8 @@ h2 {
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   clear: left;
 }
 
@@ -95,25 +93,25 @@ li {
   color: black;
   border: 1px solid white;
   height: 5.25px;
-  margin: 0px;
+  margin: 0;
   display: inline-block;
   text-transform: uppercase;
   font-family: 'Quicksand', sans-serif;
 }
 
 .align-left {
-  margin-left: 0px;
-  padding-left: 0px;
-  margin: 0px;
+  margin-left: 0;
+  padding-left: 0;
+  margin: 0;
   float: left;
   width: 100%;
   text-decoration: none;
 }
 
 .align-right {
-  margin-left: 0px;
-  padding-left: 0px;
-  margin: 0px;
+  margin-left: 0;
+  padding-left: 0;
+  margin: 0;
   float: right;
   max-width: 40%;
 }
@@ -147,7 +145,7 @@ li {
     width: 100%;
     height: 2.625em;
     text-align: center;
-    margin: 0px;
+    margin: 0;
     color: gray;
   }
 
@@ -156,13 +154,12 @@ li {
   }
 
   .minus-padding {
-    padding: 0px;
-    margin: 0px;
-    left: 0px;
+    padding: 0;
+    margin: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 69px;
-    opacity: 50%;
     position: fixed;
     z-index: 100;
     border: 2px solid white;
@@ -215,7 +212,7 @@ li {
     font-size: 1em;
     font-family: 'Quicksand', sans-serif;
     padding: 0em 1.875em 2.62em 1.875em;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   p#sidebar-title.sidebar{
@@ -233,7 +230,7 @@ li {
     font-size: 0.75em;
     font-family: 'Quicksand', sans-serif;
     padding: 0em 1.875em 2.62em 1.875em;
-    margin-top: 0px;
+    margin-top: 0;
   }
   div.column-right {
     width: 100%;
@@ -245,8 +242,8 @@ li {
 
   .table {
     width: 100%;
-    margin-left: 0px;
-    border-left: 0px;
+    margin-left: 0;
+    border-left: 0;
     padding-right: 2em;
   }
 
@@ -281,7 +278,6 @@ li {
       width: 100%;
       display: block;
       max-height: 4.1em;
-      display: block;
       font-family: 'Josefin Slab', serif;
       font-weight: bolder;
       color: white;
@@ -354,7 +350,6 @@ li {
   margin-top: 4em;
   padding-left: 1em;
   padding-right: 1em;
-  float: left;
 }
 
 .column-left {
@@ -375,7 +370,7 @@ li {
   font-size: 1.75em;
   font-family: 'Quicksand', sans-serif;
   padding: 0em 1.875em 2.62em 1.875em;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 #sidebar-title {
@@ -388,8 +383,8 @@ li {
 
 .table {
   width: 100%;
-  margin-left: 0px;
-  border-left: 0px;
+  margin-left: 0;
+  border-left: 0;
   padding-right: 2em;
 }
 
@@ -398,7 +393,6 @@ li {
   border: 1px, solid, black;
   display: inline-block;
   font-family: 'Quicksand', sans-serif;
-  float: right;
 }
 
 tbody tr:nth-child(2n+2) {
@@ -480,12 +474,12 @@ td {
 }
 
 .footer-row ul {
-    padding: 0px;
+    padding: 0;
     clear: left;
     margin-right: auto;
     margin-left: auto;
     width: 59%;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 45px;
 }
 
@@ -501,19 +495,18 @@ td {
     margin-top: 4em;
     padding-left: 1em;
     padding-right: 1em;
-    float: left;
   }
   .circle {
       border-radius: 100%;
       width: 24%;
   }
   .footer-row ul {
-    padding: 0px;
+    padding: 0;
     clear: left;
     margin-right: auto;
     margin-left: auto;
     width: 82%;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 45px;
   }
   .grid p  {
