@@ -14,11 +14,12 @@ body {
   min-width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto;
+  grid-template-rows: auto 20vh 40vh 20vh 60vh 20vh;
   grid-template-areas:
     "header"
-    "display"
+    "buffer"
     "menu"
+    "buffer2"
     "employees"
     "footer"
 }
@@ -68,6 +69,10 @@ ul {
 }
 .nav5 {
   grid-area: nav5;
+}
+
+.buffer-container {
+  grid-area: buffer;
 }
 .home {
   width: 75%;
@@ -130,6 +135,8 @@ li {
   border: 2px solid white;
   background-image: linear-gradient(white, gray);
   opacity: 0.5;
+  position: fixed;
+  width: 100%;
 }
 
 .main-photo {
