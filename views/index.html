@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sundae Worship</title>
+  <title id="home">Sundae Worship</title>
   <link rel="stylesheet" type="text/css" href="css/grid.css"/>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
@@ -23,11 +23,11 @@
   <nav id="nav" class="minus-padding navRow">
     <div class="align-left">
       <ul>
-        <li class="nav-li-left nav1"><a href="#"> Home </a></li>
-        <li class="nav-li-left nav2"><a href="#menu"> Menu </a></li>
-        <li class="nav-li-left nav3"><a href="#employees">Employees</a></li>
-        <li class="nav-li-left nav4"><a href="" onclick="newWindow()">View Mobile</a></li>
-        <li class="nav-li-left nav5"><a id="demo" href="#" >Contact</a></li>
+        <li class="nav-li-left nav1" id="link1"> Home </li>
+        <li class="nav-li-left nav2" id="link2">Menu </li>
+        <li class="nav-li-left nav3" id="link3">Our Story</li>
+        <li class="nav-li-left nav4" id="link4">Team Members</li>
+        <li class="nav-li-left nav5" id="link5">Contact</li>
       </ul>
     </div>
   </nav>
@@ -56,7 +56,7 @@
           208-208-2080
         </p>
         <div class="address">
-          <p class="sidebar">Sundae Worship began like every good love story -- with two young people who are brought together over a scoop of ice-cream, the first blushes of love and copious amounts of unhealthy obsession.  This project began as an introductory project in a coding bootcamp.  It was supposed to be a single static webpage which used HTML &lt;table&gt; tags to create a menu.  Over the years I have come back to it again and again.  The tables got dropped as I tried to experiment using JavaScript to import data from a file, then write the table programmatically.  I was successful at that.  But then that wasn’t enough.  I thought why not just build a backend with MVC architecture.  And I was successful at that.  So here it is today.  A beautiful project made with a little bit of love and an unwarranted amount of obsession.
+          <p>Sundae Worship began like every good love story -- with two young people who are brought together over a scoop of ice-cream, the first blushes of love and copious amounts of unhealthy obsession.  This project began as an introductory project in a coding bootcamp.  It was supposed to be a single static webpage which used HTML &lt;table&gt; tags to create a menu.  Over the years I have come back to it again and again.  The tables got dropped as I tried to experiment using JavaScript to import data from a file, then write the table programmatically.  I was successful at that.  But then that wasn’t enough.  I thought why not just build a backend with MVC architecture.  And I was successful at that.  So here it is today.  A beautiful project made with a little bit of love and an unwarranted amount of obsession.
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@
 
     </div>
 
-    <div class="row-full"><!--keep row full for grid container-->
+    <div class="row-full team"><!--keep row full for grid container-->
       <div class="center"><!--get rid of div class center-->
         <!-- grids  -->
         <div class="grid">
@@ -139,6 +139,18 @@
   </div><!--container end-->
   </body>
   <script src="src/menu.js">
+  </script>
+  <script>
+  (function(){
+    console.log("adding script tags");
+    window.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelector('#link1').setAttribute('href', "#home");
+      document.querySelector('#link2').setAttribute('href', "#menu");
+      document.querySelector('#link3').setAttribute('href', "#sidebar-title");
+      document.querySelector('#link4').setAttribute('href', "#team");
+      document.querySelector('#link5').setAttribute('href', "");
+    });
+  }());
   </script>
   <script>
   // Select all links with hashes
