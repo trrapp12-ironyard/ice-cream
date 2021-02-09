@@ -32,14 +32,29 @@ h1 {
   color: white;
   text-decoration: none;
   text-align: center;
-  width: 100%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   text-shadow: 1px 1px 20px black;
   line-height: 220px;
+  transform: translateY(50%);
 }
 
 h2 {
   text-align: center;
+}
+
+li {
+  color: #0000EE;
+}
+
+li:hover {
+  background-color: #9375EB;
+}
+
+li:visited {
+  color: #0000EE;
 }
 
 ul {
@@ -80,8 +95,8 @@ ul {
   position: relative;
   height: 126%;
   grid-area: photo;
-  grid-template-columns: 20% 40% 20%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
   grid-template-areas:
   "photo1 photo2 photo3"
   "photo4 photo5 photo6"
@@ -89,9 +104,9 @@ ul {
 }
 
 .home {
-  grid-area: photo5;
   z-index: 200;
   position: relative;
+  display: inline;
 }
 
 #logo {
@@ -110,7 +125,11 @@ ul {
   height: 2.625em;
   text-align: center;
   margin: 0;
-  color: gray;
+}
+
+li a {
+  color: #0000EE;
+
 }
 
 ul {
@@ -121,7 +140,6 @@ ul {
 
 li {
   text-decoration: none;
-  color: black;
   border: 1px solid white;
   height: 5.25px;
   margin: 0;
@@ -171,7 +189,6 @@ li {
     height: 2.625em;
     text-align: center;
     margin: 0;
-    color: gray;
   }
 
   ul .nav-li-left {
@@ -213,7 +230,9 @@ li {
     color: white;
     text-decoration: none;
     text-align: center;
-    width: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     height: 175vh;
     position: absolute;
     left: 50%;

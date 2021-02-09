@@ -144,11 +144,11 @@
   (function(){
     console.log("adding script tags");
     window.addEventListener('DOMContentLoaded', (event) => {
-      document.querySelector('#link1').setAttribute('href', "#home");
-      document.querySelector('#link2').setAttribute('href', "#menu");
-      document.querySelector('#link3').setAttribute('href', "#sidebar-title");
-      document.querySelector('#link4').setAttribute('href', "#team");
-      document.querySelector('#link5').setAttribute('href', "");
+      document.querySelector('#link1').addEventListener('click', () => {location.href = '#home'});
+      document.querySelector('#link2').addEventListener('click', () => {location.href = '#menu'});
+      document.querySelector('#link3').addEventListener('click', () => {location.href = '#sidebar-title'});
+      document.querySelector('#link4').addEventListener('click', () => {location.href = '#team'});
+      document.querySelector('#link5').addEventListener('click', () => {location.href = 'https://trrapp12.github.io/Sundae-Worship/contact.html'});
     });
   }());
   </script>
