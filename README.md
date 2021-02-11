@@ -15,7 +15,7 @@
 
 ### This project demonstrates:
 ---
-
+#### Version 1.0
 - [x] Initiative.  
   * This project has gone through three distinctive versions.  The first version was the most basic, day-one introductory assignment from Iron Yard coding camp. All it required were: 
   
@@ -40,10 +40,43 @@
 - [x] Create Social Media links
 <br/>
 <br/>
-  * the use of html tables to create tabular data.  I completed the project, then came back to see if I could challenge myself.  So I refactored the code to:
- - [x] create a JavaScript object with the name and the individual data for each object
- - [x] create a JavaScript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
-  
+#### Version 2.0
+But that wasn't enough for me.  I wanted to make it better.  Even though it was my first project, I wanted to show that I could improve on it, so I refactored the code to:
+ - [x] create a JavaScript object 
+ - [x] place that JavaScript object in a file that had to be imported to practice connecting html to JavaScript files.  
+ - [x] create a JavaScript object that included with the name and the individual data for each type of ice cream.
+ - [x] create a JavaScript function that imported the information, iterated through an object with multiple levels, sorted it alphabetically, and then use JavaScript to dynamically built a full table complete with <table>, <r>, <th>, and <td> elements which each contain the correct information and styling.
+ 
+#### Version 3.0
+After successfully completing this project, I set it aside for a while.  But eventually the itch came back.  This time I decided I would do a complete rehaul of everything.  This would include: 
+
+HTML
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
+-[x]
 ### The original requirements for this project were:
 ---
 
