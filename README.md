@@ -112,9 +112,9 @@ Data Analytics
 - [x] track page views
 - [x] track sessions across multiple pages
 - [x] track time on page
-- [x] create banner to accept cookies and cookies which will save to local computer a userID, last date visited, time on site, and cookie expiration date
-- [x] create custom filter to filter out internal traffic
-- [x] create reports for sales 
+- [ ] create banner to accept cookies and cookies which will save to local computer a userID, last date visited, time on site, and cookie expiration date
+- [ ] create custom filter to filter out internal traffic
+- [ ] create reports for sales 
 
 
 ---
