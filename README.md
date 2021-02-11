@@ -17,15 +17,8 @@
 ---
 
 - [x] Initiative.  
-  * This began as an assignment from Iron Yard coding camp. 
+  * This project has gone through three distinctive versions.  The first version was the most basic, day-one introductory assignment from Iron Yard coding camp. All it required were: 
   
-  * The original project required the use of html tables to create tabular data.  I completed the project, then came back to see if I could challenge myself.  So I refactored the code to:
- - [x] create a JavaScript object with the name and the individual data for each object
- - [x] create a JavaScript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
-  
-### The original requirements for this project were:
----
-
 - [x] Build a homepage for your local ice cream shop. 
 - [x] Initialize and push/pull to a GitHub repository.
 - [x] Regular commits and use proper semantic HTML tags.
@@ -47,6 +40,14 @@
 - [x] Create Social Media links
 <br/>
 <br/>
+  * the use of html tables to create tabular data.  I completed the project, then came back to see if I could challenge myself.  So I refactored the code to:
+ - [x] create a JavaScript object with the name and the individual data for each object
+ - [x] create a JavaScript function that pulled in the information, sorted it alphabetically, built a table, and then displayed the information in it's own cells. 
+  
+### The original requirements for this project were:
+---
+
+
 
 ---
 ### More Information: 
