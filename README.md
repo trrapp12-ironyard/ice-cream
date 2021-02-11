@@ -63,7 +63,7 @@ Technologies
 - [x] integrate NodeJs for runtime build and to decrease build time
 - [x] utilize NPM for build packages, tracking dependencies, and future proofing 
 - [x] utilize Express for routing
-- [x] utilize HTML5, CSS, and JavaScript for Front End
+- [x] utilize HTML5, Sass, CSS and JavaScript for Front End
 - [ ] utilize SQL to build back end
 - [ ] utilize Stripe for ecommerce
 - [ ] utilze GTM and GA for analytics
