@@ -56,6 +56,7 @@ Project Management
 
 - [x] Utilize GitHub Issues feature to create, assign, and organize issues
 - [x] Incorporate GitHub projects to track multiple projects simultaneously across simulated sprints and development stages
+- [ ] Documentation, Documentation, Documentation
 
 Technologies
 - [x] integrate content versioning software (Git and Github)
@@ -63,55 +64,54 @@ Technologies
 - [x] utilize NPM for build packages, tracking dependencies, and future proofing 
 - [x] utilize Express for routing
 - [x] utilize HTML5, CSS, and JavaScript for Front End
-- [x] utilize SQL to build back end
-- [x] utilize Stripe for ecommerce
-- [x] utilze GTM and GA for analytics
+- [ ] utilize SQL to build back end
+- [ ] utilize Stripe for ecommerce
+- [ ] utilze GTM and GA for analytics
 
 Marketing
 - [x] rebrand name of company
-- [x] use Adobe Color to create unified color palette to use for theme throughout site
-- [x] create mobile presence
-- [x] incorporate SEO strategy
-- [x] define target market
-- [x] measure 
-- [x] create call to action
+- [ ] use Adobe Color to create unified color palette to use for theme throughout site
+- [ ] create mobile presence
+- [ ] incorporate SEO strategy
+- [ ] define target market
+- [ ] create call to action
 - [x] use Google Browser feature to create QR code for business card and hyperlink to social media acconnts
 
 UX/UI
-- [x] measure speed of website and then improve it
-- [x] get assessment for ADA accessibility and fix issues
-- [x] JavaScript to support touch and swipe capabilities
+- [ ] improve speed of website from v2.0 and v3.0
+- [ ] get assessment for ADA accessibility and fix issues
+- [ ] JavaScript to support touch and swipe capabilities
 - [x] create 404 error message
-- [x] simply by hiding necessary, but unfrequently used settings, features, or information
+- [ ] simply by hiding necessary, but unfrequently used settings, features, or information
 - [x] visually indicate if content exists beyond the fold
 - [x] create effects to indicate interactive capabilities
 
 Front-End
 - [x] move from static page to dynamic MVC architecture
-- [x] create templating 
+- [ ] create templating 
 - [x] build multiple pages
-- [x] convert CSS to grid
+- [ ] convert CSS to grid
 - [x] alphabetize CSS for better maintenance
-- [x] contact form that handles form submission 
+- [ ] contact form that handles form submission 
 - [x] GET and POST requests
 
 Back-End
-- [x] SQL database
-- [x] CRUD functionality for both products and orders
-- [x] One-to-Many and Many-To-One relationships
-- [x] Authentication
-- [x] Validation
+- [ ] SQL database
+- [ ] CRUD functionality for both products and orders
+- [ ] One-to-Many and Many-To-One relationships
+- [ ] Authentication
+- [ ] Validation
 
 Eccomerce
-- [x] create usable stripe integration
+- [ ] create usable stripe integration
 
 Data Analytics
 
-- [x] incorporate Google Tag Manager and Google Analytics
-- [x] track button clicks
-- [x] track page views
-- [x] track sessions across multiple pages
-- [x] track time on page
+- [ ] incorporate Google Tag Manager and Google Analytics
+- [ ] track button clicks
+- [ ] track page views
+- [ ] track sessions across multiple pages
+- [ ] track time on page
 - [ ] create banner to accept cookies and cookies which will save to local computer a userID, last date visited, time on site, and cookie expiration date
 - [ ] create custom filter to filter out internal traffic
 - [ ] create reports for sales 
