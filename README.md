@@ -54,66 +54,67 @@ After successfully completing this project, I set it aside for a while.  But eve
 
 Project Management
 
--[x] Utilize GitHub Issues feature to create, assign, and organize issues
--[x] Incorporate GitHub projects to track multiple projects simultaneously across simulated sprints and development stages
+- [x] Utilize GitHub Issues feature to create, assign, and organize issues
+- [x] Incorporate GitHub projects to track multiple projects simultaneously across simulated sprints and development stages
 
 Technologies
--[x] integrate content versioning software (Git and Github)
--[x] integrate NodeJs for runtime build and to decrease build time
--[x] utilize NPM for build packages, tracking dependencies, and future proofing 
--[x] utilize Express for routing
--[x] utilize HTML5, CSS, and JavaScript for Front End
--[x] utilize SQL to build back end
--[x] utilize Stripe for ecommerce
--[x] utilze GTM and GA for analytics
+- [x] integrate content versioning software (Git and Github)
+- [x] integrate NodeJs for runtime build and to decrease build time
+- [x] utilize NPM for build packages, tracking dependencies, and future proofing 
+- [x] utilize Express for routing
+- [x] utilize HTML5, CSS, and JavaScript for Front End
+- [x] utilize SQL to build back end
+- [x] utilize Stripe for ecommerce
+- [x] utilze GTM and GA for analytics
 
 Marketing
--[x] rebrand name of company
--[x] use Adobe Color to create unified color palette to use for theme throughout site
--[x] create mobile presence
--[x] incorporate SEO strategy
--[x] define target market
--[x] measure 
--[x] create call to action
--[x] use Google Browser feature to create QR code for business card and hyperlink to social media acconnts
+- [x] rebrand name of company
+- [x] use Adobe Color to create unified color palette to use for theme throughout site
+- [x] create mobile presence
+- [x] incorporate SEO strategy
+- [x] define target market
+- [x] measure 
+- [x] create call to action
+- [x] use Google Browser feature to create QR code for business card and hyperlink to social media acconnts
 
 UX/UI
--[x] measure speed of website and then improve it
--[x] get assessment for ADA accessibility and fix issues
--[x] JavaScript to support touch and swipe capabilities
--[x] create 404 error message
--[x] simply by hiding necessary, but unfrequently used settings, features, or information
--[x] visually indicate if content exists beyond the fold
--[x] create effects to indicate interactive capabilities
+- [x] measure speed of website and then improve it
+- [x] get assessment for ADA accessibility and fix issues
+- [x] JavaScript to support touch and swipe capabilities
+- [x] create 404 error message
+- [x] simply by hiding necessary, but unfrequently used settings, features, or information
+- [x] visually indicate if content exists beyond the fold
+- [x] create effects to indicate interactive capabilities
 
 Front-End
--[x] move from static page to dynamic MVC architecture
--[x] create templating 
--[x] build multiple pages
--[x]
--[x]
+- [x] move from static page to dynamic MVC architecture
+- [x] create templating 
+- [x] build multiple pages
+- [x] convert CSS to grid
+- [x] alphabetize CSS for better maintenance
+
 
 Accessibility
--[x] g
--[x]
--[x]
--[x]
--[x]
--[x]
+- [x] 
+- [x] 
+- [x] 
+- [x] 
+- [x] 
+- [x] 
 
 Eccomerce
--[x] create usable stripe integration
+- [x] create usable stripe integration
 
 Data Analytics
 
--[x] incorporate Google Tag Manager and Google Analytics
--[x] track button clicks
--[x] track page views
--[x] track sessions across multiple pages
--[x] track time on page
--[x] create banner to accept cookies and cookies which will save to local computer a userID, last date visited, time on site, and cookie expiration date
--[x] create custom filter to filter out internal traffic
--[x] create reports for sales 
+- [x] incorporate Google Tag Manager and Google Analytics
+- [x] track button clicks
+- [x] track page views
+- [x] track sessions across multiple pages
+- [x] track time on page
+- [x] create banner to accept cookies and cookies which will save to local computer a userID, last date visited, time on site, and cookie expiration date
+- [x] create custom filter to filter out internal traffic
+- [x] create reports for sales 
 
 
 ---
