@@ -92,15 +92,15 @@ Front-End
 - [x] build multiple pages
 - [x] convert CSS to grid
 - [x] alphabetize CSS for better maintenance
+- [x] contact form that handles form submission 
+- [x] GET and POST requests
 
-
-Accessibility
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
+Back-End
+- [x] SQL database
+- [x] CRUD functionality for both products and orders
+- [x] One-to-Many and Many-To-One relationships
+- [x] Authentication
+- [x] Validation
 
 Eccomerce
 - [x] create usable stripe integration
