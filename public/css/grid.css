@@ -20,7 +20,7 @@ body {
     "employees"
     "footer";
   grid-template-columns: 100%;
-  grid-template-rows: auto 100vh 45vh 40vh 100vh 100vh 100vh;
+  grid-template-rows: auto 100vh 45vh 40vh 110vh 100vh 100vh;
   height: 100%;
   margin: 0;
   min-width: 100%;
@@ -183,6 +183,34 @@ li {
   font-size: .2rem;
 }
 
+.employee-container {
+  display: grid;
+  grid-area: employees;
+  grid-template-areas:
+    "employee_title1 employee_title2 employee_title3"
+    "employee_left_c employe_center_c employee_right_c";
+  grid-template-columns: 15% 70% 15%;
+}
+
+.employee-title {
+  color: white;
+  display: grid;
+  font-family: 'Josefin Slab', serif;
+  font-size: 4em;
+  font-weight: bolder;
+  grid-area: employee_title2;
+  line-height: 220px;
+  max-height: 4.1em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 20px black;
+  top: 2em;
+  width: 100%;
+}
+.team {
+  grid-area: employe_center_c;
+}
+
 @media (max-width: 490px) {
 
   .nav-li-left {
@@ -264,10 +292,8 @@ li {
     padding: 0 1.875em 2.62em 1.875em;
   }
   div.column-right {
-    border: 1px solid black;
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
-    width: 100%;
   }
 
   .table {
@@ -333,39 +359,16 @@ li {
 }
 
 /* body.css */
-.center {
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 150px;
-  transform: translate(8.95%, 0%);
-  width: 70%;
-}
-
 .empty {
   border: 0;
   float: left;
-  grid-area: employees;
   margin: 0;
   position: relative;
   width: 100%;
 }
 
 #employees {
-  color: white;
-  display: block;
-  font-family: 'Josefin Slab', serif;
-  font-size: 4em;
-  font-weight: bolder;
-  line-height: 220px;
-  max-height: 4.1em;
-  position: relative;
-  text-decoration: none;
-  text-align: center;
-  text-shadow: 1px 1px 20px black;
-  top: 2em;
-  width: 100%;
+
 }
 
 .circle {
@@ -418,10 +421,8 @@ li {
 }
 
 .column-right {
-  border: 1px solid black;
   display: inline-block;
   font-family: 'Quicksand', sans-serif;
-  width: 55%;
 }
 
 tbody tr:nth-child(2n+2) {
@@ -449,14 +450,6 @@ td {
 
 #header-modified {
   background-color: white;
-}
-
-.row {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 50%;
 }
 
 .footer {
@@ -491,7 +484,7 @@ td {
 .container {
   display: grid;
   grid-area: menu;
-  grid-gap: 10px;
+  grid-gap: 10%;
   grid-template-areas:
     "container_left container_right";
   grid-template-columns: 1fr 1fr;
