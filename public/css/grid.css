@@ -346,6 +346,7 @@ li {
 .empty {
   border: 0;
   float: left;
+  grid-area: employees;
   margin: 0;
   position: relative;
   width: 100%;
@@ -498,11 +499,13 @@ td {
 .container {
   display: grid;
   grid-area: menu;
+  grid-gap: 10px;
   grid-template-areas:
-    "container_left container_right";
-  grid-template-columns: 33% 66%;
+    "container_margin_left container_left container_right container_margin_right";
+  grid-template-columns: 10% 1fr 1fr 10%;
   margin-left: auto;
   margin-right: auto;
+  width: 80%;
 }
 
 .footer-row ul {
