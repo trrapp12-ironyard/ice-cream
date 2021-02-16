@@ -184,12 +184,13 @@ li {
 }
 
 .employee-container {
-  display: grid;
-  grid-area: employees;
-  grid-template-areas:
-    "employee_title1 employee_title2 employee_title3"
-    "employee_left_c employe_center_c employee_right_c";
-  grid-template-columns: 15% 70% 15%;
+    display: grid;
+    grid-area: employees;
+    grid-template-areas:
+        "employee_title1 employee_title2 employee_title3"
+        "employee_left_c employe_center_c employee_right_c";
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 24vh 78vh;
 }
 
 .employee-title {
@@ -207,8 +208,147 @@ li {
   top: 2em;
   width: 100%;
 }
-.team {
+
+.team-grid {
+  display: grid;
   grid-area: employe_center_c;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.grid-1 {
+  padding: 1rem;
+  display: grid;
+  background-color: red;
+}
+.grid-2 {
+  padding: 1rem;
+  display: grid;
+  background-color: red;
+}
+.grid-3 {
+  padding: 1rem;
+  display: grid;
+  background-color: red;
+}
+.grid-4 {
+  padding: 1rem;
+  display: grid;
+  background-color: red;
+}
+.grid-5 {
+  padding: 1rem;
+  display: grid;
+  background-color: red;
+}
+.grid-6 {
+  padding: 1rem;
+  display: grid;
+  background-color: red;
+}
+
+.grid-1::before {
+  grid-area:1/1/2/2;
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+  background-color: black;
+
+}
+.grid-2::before {
+  grid-area:1/1/2/2;
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+  background-color: black;
+
+}
+.grid-3::before {
+  grid-area:1/1/2/2;
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+  background-color: black;
+
+}
+.grid-4::before {
+  grid-area:1/1/2/2;
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+  background-color: black;
+
+}
+.grid-5::before {
+  grid-area:1/1/2/2;
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+  background-color: black;
+
+}
+.grid-6::before {
+  grid-area:1/1/2/2;
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+  background-color: black;
+
+}
+
+.grid-1 > img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.grid-2 > img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.grid-3 > img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.grid-4 > img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.grid-5 > img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.grid-6 > img {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 @media (max-width: 490px) {
@@ -373,7 +513,7 @@ li {
 
 .circle {
   border-radius: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .grid {
