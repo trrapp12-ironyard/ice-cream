@@ -211,144 +211,29 @@ li {
 
 .team-grid {
   display: grid;
+  gap: 1rem;
   grid-area: employee_center_c;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
 }
 
-.grid-1 {
+.team-grid > div {
+  background-color: red;
   padding: 1rem;
   display: grid;
-  background-color: red;
-}
-.grid-2 {
-  padding: 1rem;
-  display: grid;
-  background-color: red;
-}
-.grid-3 {
-  padding: 1rem;
-  display: grid;
-  background-color: red;
-}
-.grid-4 {
-  padding: 1rem;
-  display: grid;
-  background-color: red;
-}
-.grid-5 {
-  padding: 1rem;
-  display: grid;
-  background-color: red;
-}
-.grid-6 {
-  padding: 1rem;
-  display: grid;
-  background-color: red;
+  place-items: center;
 }
 
-.grid-1::before {
-  grid-area:1/1/2/2;
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-  background-color: black;
-
-}
-.grid-2::before {
-  grid-area:1/1/2/2;
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-  background-color: black;
-
-}
-.grid-3::before {
-  grid-area:1/1/2/2;
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-  background-color: black;
-
-}
-.grid-4::before {
-  grid-area:1/1/2/2;
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-  background-color: black;
-
-}
-.grid-5::before {
-  grid-area:1/1/2/2;
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-  background-color: black;
-
-}
-.grid-6::before {
-  grid-area:1/1/2/2;
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-  background-color: black;
-
+.team-grid > div::before {
+    background-color: black;
+    content: "";
+    display: block;
+    grid-area: 1 / 1 / 2 / 2;
+    padding-bottom: 100%;
 }
 
-.grid-1 > img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.grid-2 > img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.grid-3 > img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.grid-4 > img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.grid-5 > img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-.grid-6 > img {
-  position: absolute;
-  max-width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+.team-grid > div > img {
+  width: 100%;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 @media (max-width: 490px) {
@@ -514,15 +399,6 @@ li {
 .circle {
   border-radius: 100%;
   /* width: 100%; */
-}
-
-.grid {
-  display: inline-block;
-  height: auto;
-  margin-top: 4em;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 24%;
 }
 
 .column-left {
