@@ -188,7 +188,7 @@ li {
     grid-area: employees;
     grid-template-areas:
         "employee_title1 employee_title2 employee_title3"
-        "employee_left_c employe_center_c employee_right_c";
+        "employee_left_c employee_center_c employee_right_c";
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 24vh 78vh;
 }
@@ -211,7 +211,7 @@ li {
 
 .team-grid {
   display: grid;
-  grid-area: employe_center_c;
+  grid-area: employee_center_c;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
 }
