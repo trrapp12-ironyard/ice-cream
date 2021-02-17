@@ -196,13 +196,17 @@
       document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
         item.addEventListener('mouseover', event => {
           console.log(item);
-          item.lastElementChild.style.fontWeight = "bold"
+          item.lastElementChild.style.fontWeight = "bold";
+          item.lastElementChild.style.color = "gray";
+          item.lastElementChild.style.textShadow = "4px 4px 11px rgba(147,117,235,0.3)";
         })
       })
       document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
         item.addEventListener('mouseout', event => {
           console.log(item);
-          item.lastElementChild.style.fontWeight = "normal"
+          item.lastElementChild.style.fontWeight = "normal";
+          item.lastElementChild.style.color = "gray";
+          item.lastElementChild.style.textShadow = "0px 0px white";
         })
       })
     //   for (var i = 0; i < grid.length; i ++) {
