@@ -20,7 +20,7 @@ body {
     "employees"
     "footer";
   grid-template-columns: 100%;
-  grid-template-rows: 0vh 100vh 45vh 40vh 110vh 100vh 100vh;
+  grid-template-rows: 0vh 100vh 45vh 40vh 110vh 124vh 100vh;
   height: 100%;
   margin: 0;
   min-width: 100%;
@@ -246,6 +246,9 @@ li {
   text-transform: uppercase;
 }
 
+.spaceForFooter {
+  grid-area: footer;
+}
 @media (max-width: 490px) {
 
   .nav-li-left {
