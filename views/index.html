@@ -94,27 +94,27 @@
         <!-- grids  -->
         <div>
           <img class="circle" src="images/bow-tie-businessman-fashion-man.jpg" alt="boss image" />
-          <a href="#"><p>Meet Ben: An impulsive Vanilla lover.</p></a>
+          <a href="#" class="grid-p"><p>Meet Ben: <br><br>An impulsive Vanilla lover.</p></a>
         </div>
         <div>
           <img class="circle" src="images/man-couple-people-woman.jpg" alt="coworkers boxing" />
-          <a href="#"><p>Meet Dolley Madison: An argumentative mint chocolate-chipper. </p></a>
+          <a href="#" class="grid-p"><p>Meet Dolley Mae: <br><br>An argumentative mint chocolate-chipper. </p></a>
         </div>
         <div>
           <img class="circle" src="images/pexels-photo (1).jpg" alt="man lifting weights" />
-          <a href="#"><p>Meet Jerry: A strawberry introvert. </p></a>
+          <a href="#" class="grid-p"><p>Meet Jerry: <br><br>A strawberry introvert. </p></a>
         </div>
         <div>
           <img class="circle" src="images/pexels-photo-89524 (1).jpg" alt="little girl" />
-          <a href="#"><p>Meet Robert Green: A flirtatious chocolate lover. </p></a>
+          <a href="#" class="grid-p"><p>Meet Riley: <br><br>A loquacious chocolate lover. </p></a>
         </div>
         <div>
           <img class="circle" src="images/pexels-photo-127968.jpg" alt="little girl floating" />
-          <a href="#"><p>Meet Nicholas Lemery: A sherbet pessimist. </p></a>
+          <a href="#" class="grid-p"><p>Meet Lemery: <br><br>A sherbet pessimist. </p></a>
         </div>
         <div>
           <img class="circle" src="images/pexels-photo.jpg" alt="little girl surprised"/>
-          <a href="#"><p>Meet H. Glasse: An aggressive Rocky Roader. </p></a>
+          <a href="#" class="grid-p"><p>Meet Nicki: <br><br>An aggressive Rocky Roader. </p></a>
         </div>
   </div>
   <div class="spaceForFooter">
@@ -192,16 +192,31 @@
     });
   </script>
   <script>
-    function newWindow() {
-      newwindow = window.open('https://trrapp12.github.io/ice-cream/', '', 'width=680,height=680')
-
-      function resizeWinTo() {
-        newwindow.resizeTo(20, 20);
-        newwindow.focus();
-        alert("inner function called")
-      };
-      resizeWinTo();
-    };
-
+  (() => {
+    window.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
+        item.addEventListener('mouseover', event => {
+          console.log(item);
+          item.lastElementChild.style.fontWeight = "bold"
+        })
+      })
+      document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
+        item.addEventListener('mouseout', event => {
+          console.log(item);
+          item.lastElementChild.style.fontWeight = "normal"
+        })
+      })
+    //   for (var i = 0; i < grid.length; i ++) {
+    //     grid[i].addEventListener('mouseover', () => {
+    //       console.log("mouse over grid =" + grid[i]);
+    //       grid[i].lastElementChild.style.fontWeight = "bold";
+    //   });
+    //   grid[i].addEventListener('mouseout', () => {
+    //     console.log("mouse out grid =" + grid[i]);
+    //     grid[i].lastElementChild.style.fontWeight = "normal";
+    // });
+    // }
+  });
+ })();
   </script>
 </html>

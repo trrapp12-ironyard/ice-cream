@@ -211,13 +211,14 @@ li {
 
 .team-grid {
   display: grid;
-  gap: 1rem;
+  gap: 3rem;
   grid-area: employee_center_c;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 70%;
+  margin: auto;
 }
 
 .team-grid > div {
-  background-color: red;
   padding: 1rem;
   display: grid;
   place-items: center;
@@ -234,6 +235,15 @@ li {
 .team-grid > div > img {
   width: 100%;
   grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid-p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: 490px) {
