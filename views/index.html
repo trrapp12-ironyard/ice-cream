@@ -196,6 +196,9 @@
       document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
         item.addEventListener('mouseover', event => {
           console.log(item);
+          item.style.width = "auto";
+          item.style.width = "91%";
+          item.style.boxShadow = "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px";
           item.lastElementChild.style.fontWeight = "bold";
           item.lastElementChild.style.color = "gray";
           item.lastElementChild.style.textShadow = "4px 4px 11px rgba(147,117,235,0.3)";
@@ -204,6 +207,9 @@
       document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
         item.addEventListener('mouseout', event => {
           console.log(item);
+          item.style.width = "auto";
+          item.style.height = "auto";
+          item.style.boxShadow = "";
           item.lastElementChild.style.fontWeight = "normal";
           item.lastElementChild.style.color = "gray";
           item.lastElementChild.style.textShadow = "0px 0px white";
