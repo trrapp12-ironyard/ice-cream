@@ -20,7 +20,7 @@ body {
     "employees"
     "footer";
   grid-template-columns: 100%;
-  grid-template-rows: 0vh 100vh 45vh 40vh 110vh 124vh 100vh;
+  grid-template-rows: 0vh 100vh 45vh 40vh 110vh 124vh 16vh;
   height: 100%;
   margin: 0;
   min-width: 100%;
