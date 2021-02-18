@@ -219,9 +219,11 @@ li {
 }
 
 .team-grid > div {
-  padding: 1rem;
+  border-radius: 25px;
   display: grid;
+  padding: 1rem;
   place-items: center;
+
 }
 
 .team-grid > div::before {
