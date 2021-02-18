@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id="home">Sundae Worship</title>
+  <title>Sundae Worship</title>
   <link rel="stylesheet" type="text/css" href="css/grid.css"/>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
@@ -36,7 +36,7 @@
     alt="A Banana Split" /> -->
     <div class="photo-container">
       <div class="home">
-        <h1>
+        <h1 id="home">
           Sundae <br>  <p id="logo">s</p> Worship
         </h1>
       </div>
@@ -196,23 +196,32 @@
       document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
         item.addEventListener('mouseover', event => {
           console.log(item);
+          item.style.transitionDuration = "300ms";
+          item.style.transitionTimingFunction = "linear";
           item.style.width = "auto";
           item.style.width = "91%";
           item.style.boxShadow = "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px";
-          item.lastElementChild.style.fontWeight = "bold";
           item.lastElementChild.style.color = "gray";
           item.lastElementChild.style.textShadow = "4px 4px 11px rgba(147,117,235,0.3)";
+          item.lastElementChild.transitionDuration = "300ms";
+          item.lastElementChild.transitionTimingFunction = "linear";
+          item.lastElementChild.style.fontWeight = "bold";
         })
       })
       document.querySelectorAll("body > div.employee-container > div.team-grid > div").forEach(item => {
         item.addEventListener('mouseout', event => {
           console.log(item);
+          item.style.transitionDuration = "300ms";
+          item.style.transitionTimingFunction = "linear";
           item.style.width = "auto";
           item.style.height = "auto";
           item.style.boxShadow = "";
+          item.lastElementChild.transitionDuration = "300ms";
+          item.lastElementChild.transitionTimingFunction = "linear";
           item.lastElementChild.style.fontWeight = "normal";
           item.lastElementChild.style.color = "gray";
           item.lastElementChild.style.textShadow = "0px 0px white";
+
         })
       })
     //   for (var i = 0; i < grid.length; i ++) {
@@ -228,4 +237,29 @@
   });
  })();
   </script>
+  <script>
+  (() => {
+    window.addEventListener('DOMContentLoaded', () => {
+      console.log('firing scroll window listener');
+
+      document.querySelectorAll("a[href=linkRegex]").addEventListener('click', (e) => {
+        console.log("firing nav scroll height click event");
+        //select Nav element
+        let navbar = document.querySelector('nav');
+        //calculate nav element height
+        let navbarheight = parseInt(window.getComputedStyle(navbar).height);
+        //find target placement and calculate height from there
+        // let scrollHeight = document.querySelector(e.target.hashk).offsetTop - (navbarheight / 2);
+        //scroll
+        window.scroll(0, scrollHeight);
+        //update window locaiton
+        window.location.hash = e.target.hash;
+        //don't prevent default action
+        e.preventDefault();
+
+      })
+    })
+  })();
+  </Script>
+
 </html>
