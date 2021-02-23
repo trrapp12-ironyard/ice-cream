@@ -137,7 +137,8 @@ Data Analytics
  <summary>Links Visited</summary>
 </details>
 <details>
- <summary>Examples</summary>
+ <summary>Link Anchor Color</summary>
+ ![Link Anchor Color Scheme](https://user-images.githubusercontent.com/11747875/108901218-d5c7ed80-75d7-11eb-9ea2-98548a4602a4.PNG)
 </details>
 
 
