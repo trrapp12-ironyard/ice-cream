@@ -119,6 +119,12 @@ Data Analytics
 
 ---
 
+#### Color Palette
+
+<details>
+ <summary>Examples</summary>
+</details>
+
 
 
 ---
