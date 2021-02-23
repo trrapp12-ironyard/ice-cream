@@ -122,6 +122,21 @@ Data Analytics
 #### Color Palette
 
 <details>
+ <summary>Background Color</summary>
+</details>
+<details>
+ <summary>Navigation Buttons On Hover</summary>
+</details>
+<details>
+ <summary>Links</summary>
+</details>
+<details>
+ <summary>Links Hover</summary>
+</details>
+<details>
+ <summary>Links Visited</summary>
+</details>
+<details>
  <summary>Examples</summary>
 </details>
 
