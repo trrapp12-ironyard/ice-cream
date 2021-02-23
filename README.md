@@ -138,8 +138,6 @@ Data Analytics
 </details>
 
 <details>
-
-<details>
  <summary>Links Visited</summary>
  
  ![Link Visited Color Scheme #0000EE](https://user-images.githubusercontent.com/11747875/108901040-96999c80-75d7-11eb-897d-6807b71d8d31.PNG)
