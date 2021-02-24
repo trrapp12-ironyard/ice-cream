@@ -119,6 +119,38 @@ Data Analytics
 
 ---
 
+#### Color Palette
+
+**Screen shots were taken from an excellent on-line tool from Adobe called Adobe Color.  You can find it at color.adobe.com.**
+
+<details>
+ <summary>Navigation Buttons On Hover</summary>
+ 
+  ![Link Hover Color Scheme #937SEB](https://user-images.githubusercontent.com/11747875/108900808-50443d80-75d7-11eb-9a24-e99682883100.PNG)
+  
+</details>
+
+<details>
+ <summary>Cell Color</summary>
+ 
+ ![Cell Color Scheme #ccc](https://user-images.githubusercontent.com/11747875/108901111-b204a780-75d7-11eb-8656-40439c8dd34d.PNG)
+ 
+</details>
+
+<details>
+ <summary>Links Visited</summary>
+ 
+ ![Link Visited Color Scheme #0000EE](https://user-images.githubusercontent.com/11747875/108901040-96999c80-75d7-11eb-897d-6807b71d8d31.PNG)
+ 
+</details>
+
+<details>
+ <summary>Link Anchor Color</summary>
+ 
+ ![Link Anchor Color Scheme #0000EE](https://user-images.githubusercontent.com/11747875/108901218-d5c7ed80-75d7-11eb-9ea2-98548a4602a4.PNG)
+ 
+</details>
+
 
 
 ---
