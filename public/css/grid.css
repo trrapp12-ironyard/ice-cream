@@ -11,21 +11,21 @@ html {
 
 body {
   display: grid;
-  grid-template-areas:
-    "header"
-    "photo"
-    "buffer"
-    "menu"
-    "buffer2"
-    "employees"
-    "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 0vh 100vh 45vh 40vh 110vh 124vh 16vh;
-  height: 100%;
-  margin: 0;
-  min-width: 100%;
-  padding: 0;
-  position: relative;
+      grid-template-areas:
+          "header"
+          "photo"
+          "buffer"
+          "menu"
+          "buffer2"
+          "employees"
+          "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 0vh 100vh 45vh auto 20vh 124vh 16vh;
+      height: 100%;
+      margin: 0;
+      min-width: 100%;
+      padding: 0;
+      position: relative;
 }
 /* Logo.css */
 h1 {
@@ -254,7 +254,49 @@ footer > ul {
   grid-template-rows: 100%;
   justify-items: center;
 }
+.arrow-container {
+  width: 5em;
+  height: 5em;
+  background-color: blue;
+  padding: 0;
+  content: '';
+  display: grid;
+  grid-area: photo8;
+  margin: auto;
+  transform: translateY(24rem);
+  grid-template-columns: 5em;
+  grid-template-rows: 5em;
+}
 
+.arrow-left {
+  background-color: black;
+  border-radius: 6px 10px 10px 6px;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 5rem;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0;
+  transform: rotate(28deg) ;
+  transform-origin: center;
+  width: 5em;
+}
+
+.arrow-right {
+  background-color: red;
+  border-radius: 6px 10px 10px 6px;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 5rem;
+  left: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0;
+  transform: rotate(332deg);
+  transform-origin: center;
+  width: 5em;
+}
 @media (max-width: 490px) {
 
   .nav-li-left {
