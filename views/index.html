@@ -162,22 +162,38 @@
   ( () => {
     window.addEventListener('DOMContentLoaded', () => {
       console.log("button selector function active");
-      var arrowButton = document.getElementById('arrow-container-id');
+      var array = ["#sidebar-title","#team","#home"];
+      console.log(array);
+      var arrayShift;
+      var arrowButton = document.querySelector('#arrow-container-id');
       var status = arrowButton.getAttribute('datat-clicked');
-      var rightArrow = document.getElementById('right-arrow');
-      var leftArrow = document.getElementById('left-arrow');
+      var rightArrow = document.querySelector('#right-arrow');
+      var leftArrow = document.querySelector('#left-arrow');
+
       arrowButton.addEventListener('click', () => {
+        // arrowButton.location.href = array[0];
+
+        console.log("arrayShift value is: " + arrayShift);
+        arrayShift = array.shift();
+        console.log("arrayShift value is: " + arrayShift);
+        console.log("array value is: " + array);
+        array.push(arrayShift);
+        console.log("array value is: " + array);
           if (status === "true") {
             rightArrow.className = "arrow-right-flipped";
+            rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
             leftArrow.className = "arrow-left-flipped";
+            leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
             status = "false";
           } else {
             rightArrow.className = "arrow-right";
+            rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
             leftArrow.className = "arrow-left";
+            leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
             status = "true";
           }
-      })
-    })
+      });
+    });
   })();
   </script>
   <script>
