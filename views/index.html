@@ -39,10 +39,10 @@
         <h1 id="home">
           Sundae <br>  <p id="logo">s</p> Worship
         </h1>
-        <div class="arrow-container">
-          <div class="arrow-left">
+        <div class="arrow-container" id="arrow-container-id" data-clicked="true">
+          <div class="arrow-left" id="left-arrow">
           </div>
-          <div class="arrow-right">
+          <div class="arrow-right" id="right-arrow">
           </div>
         </div>
       </div>
@@ -157,6 +157,28 @@
       document.querySelector('#link5').addEventListener('click', () => {location.href = 'https://trrapp12.github.io/Sundae-Worship/contact.html'});
     });
   }());
+  </script>
+  <script>
+  ( () => {
+    window.addEventListener('DOMContentLoaded', () => {
+      console.log("button selector function active");
+      var arrowButton = document.getElementById('arrow-container-id');
+      var status = arrowButton.getAttribute('datat-clicked');
+      var rightArrow = document.getElementById('right-arrow');
+      var leftArrow = document.getElementById('left-arrow');
+      arrowButton.addEventListener('click', () => {
+          if (status === "true") {
+            rightArrow.className = "arrow-right-flipped";
+            leftArrow.className = "arrow-left-flipped";
+            status = "false";
+          } else {
+            rightArrow.className = "arrow-right";
+            leftArrow.className = "arrow-left";
+            status = "true";
+          }
+      })
+    })
+  })();
   </script>
   <script>
   // Select all links with hashes

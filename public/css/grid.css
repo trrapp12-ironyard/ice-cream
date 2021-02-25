@@ -296,7 +296,7 @@ footer > ul {
   width: 5em;
 }
 
-.arrow-right {
+.arrow-right-flipped {
   background-color: white;
   border-radius: 0 6px 6px 0;
   grid-area: 1 / 1 / 2 / 2;
@@ -309,7 +309,7 @@ footer > ul {
   width: 5em;
 }
 
-.arrow-right-flipped {
+.arrow-right {
   background-color: white;
   border-radius: 0 6px 6px 0;
   grid-area: 1 / 1 / 2 / 2;
