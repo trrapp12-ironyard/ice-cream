@@ -293,7 +293,7 @@ footer > ul {
   display: flex;
   height: 1em;
   width: 5em;
-  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  background: white;
   border-radius: 6px 6px 6px 6px;
 }
 
@@ -318,7 +318,7 @@ footer > ul {
   display: flex;
   height: 1em;
   width: 5em;
-  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  background: white;
   border-radius: 6px 6px 6px 6px;
 }
 
@@ -342,7 +342,7 @@ footer > ul {
   display: flex;
   height: 1em;
   width: 5em;
-  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  background: white;
   border-radius: 6px 6px 6px 6px;
 }
 
@@ -367,7 +367,7 @@ footer > ul {
   display: flex;
   height: 1em;
   width: 5em;
-  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  background: white;
   border-radius: 6px 6px 6px 6px;
 }
 
