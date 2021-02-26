@@ -286,12 +286,15 @@ footer > ul {
   z-index: 100;
 }
 
-.arrow-left::after {
+.arrow-left::before {
   content: '';
-  background: #fcfcfd;
-  box-shadow:  6px 6px 15px #656565,
-               -6px -6px 15px #ffffff;
-               z-index: 1;
+  box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
+  z-index: -1;
+  display: flex;
+  height: 1em;
+  width: 5em;
+  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  border-radius: 6px 6px 6px 6px;
 }
 
 .arrow-left-flipped {
@@ -308,12 +311,17 @@ footer > ul {
   width: 5em;
 }
 
-.arrow-left-flipped::after {
+.arrow-left-flipped::before {
   content: '';
-  background: #fcfcfd;
-  box-shadow:  6px 6px 15px #656565,
-               -6px -6px 15px #ffffff;
+  box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
+  z-index: -1;
+  display: flex;
+  height: 1em;
+  width: 5em;
+  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  border-radius: 6px 6px 6px 6px;
 }
+
 
 .arrow-right-flipped {
   background-color: white;
@@ -327,11 +335,15 @@ footer > ul {
   transform-origin: top left;
   width: 5em;
 }
-.arrow-right-flipped::after {
+.arrow-right-flipped::before {
   content: '';
-  background: #fcfcfd;
-  box-shadow:  6px 6px 15px #656565,
-               -6px -6px 15px #ffffff;
+  box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
+  z-index: -1;
+  display: flex;
+  height: 1em;
+  width: 5em;
+  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  border-radius: 6px 6px 6px 6px;
 }
 
 .arrow-right {
@@ -348,11 +360,15 @@ footer > ul {
   z-index: 1;
 }
 
-.arrow-right::after {
+.arrow-right::before {
   content: '';
-  background: #fcfcfd;
-  box-shadow:  6px 6px 15px #656565,
-               -6px -6px 15px #ffffff;
+  box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
+  z-index: -1;
+  display: flex;
+  height: 1em;
+  width: 5em;
+  background-image: linear-gradient(to right top, #ffffff, #f9f8fe, #f4f1fd, #eeeafc, #e9e3fb);
+  border-radius: 6px 6px 6px 6px;
 }
 
 @media (max-width: 490px) {
