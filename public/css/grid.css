@@ -20,7 +20,7 @@ body {
           "employees"
           "footer";
       grid-template-columns: 100%;
-      grid-template-rows: 0vh 100vh 45vh auto 20vh 124vh 16vh;
+      grid-template-rows: 0 100vh 45vh auto 20vh 124vh 16vh;
       height: 100%;
       margin: 0;
       min-width: 100%;
@@ -214,8 +214,8 @@ li {
   gap: 3rem;
   grid-area: employee_center_c;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  width: 70%;
   margin: auto;
+  width: 70%;
 }
 
 .team-grid > div {
@@ -235,16 +235,16 @@ li {
 }
 
 .team-grid > div > img {
-  width: 100%;
   grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
 }
 
 .grid-p {
   font-family: 'Quicksand', sans-serif;
   font-size: 1em;
-  text-decoration: none;
   padding: 2rem;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -287,14 +287,14 @@ footer > ul {
 }
 
 .arrow-left::before {
-  content: '';
+  background: white;
+  border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  z-index: -1;
+  content: '';
   display: flex;
   height: 1em;
   width: 5em;
-  background: white;
-  border-radius: 6px 6px 6px 6px;
+  z-index: -1;
 }
 
 .arrow-left-flipped {
@@ -312,14 +312,14 @@ footer > ul {
 }
 
 .arrow-left-flipped::before {
-  content: '';
+  background: white;
+  border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  z-index: -1;
+  content: '';
   display: flex;
   height: 1em;
   width: 5em;
-  background: white;
-  border-radius: 6px 6px 6px 6px;
+  z-index: -1;
 }
 
 
@@ -335,15 +335,16 @@ footer > ul {
   transform-origin: top left;
   width: 5em;
 }
+
 .arrow-right-flipped::before {
-  content: '';
+  background: white;
+  border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  z-index: -1;
+  content: '';
   display: flex;
   height: 1em;
   width: 5em;
-  background: white;
-  border-radius: 6px 6px 6px 6px;
+  z-index: -1;
 }
 
 .arrow-right {
@@ -361,14 +362,14 @@ footer > ul {
 }
 
 .arrow-right::before {
-  content: '';
+  background: white;
+  border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  z-index: -1;
+  content: '';
   display: flex;
   height: 1em;
   width: 5em;
-  background: white;
-  border-radius: 6px 6px 6px 6px;
+  z-index: -1;
 }
 
 @media (max-width: 490px) {
@@ -644,17 +645,16 @@ td {
 
 .footer-row ul {
     clear: left;
+    display: grid;
+    grid-template-areas: "nav1 nav2 nav3 nav4 nav5";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     padding: 0;
     padding-top: 45px;
     width: 100%;
-    display: grid;
-    grid-template-areas: "nav1 nav2 nav3 nav4 nav5";
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 100%;
-
 }
 
 .grid p {
