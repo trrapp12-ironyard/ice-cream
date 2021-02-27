@@ -179,7 +179,7 @@
        // calculate optimal heights for each section
 
        var sideBarOptimalHeight = (sideBarTitleTop - optimalHeight);
-       var teamOptimalHeight = (teamTop - optimalHeight);
+       var teamOptimalHeight = (documentBottom / 1.39);
        var homeOptimalHeight = (homeTop - optimalHeight);
 
        //put event listener on the arrow
@@ -196,7 +196,7 @@
                //logic to scroll down to sidebar areas
                window.scrollTo({
                  top: sideBarOptimalHeight,
-                 left: 0, 
+                 left: 0,
                  behavior: 'smooth'
                });
              } else if (currentWindowScrollTop > 1000 && currentWindowScrollTop < 2000) {
