@@ -268,7 +268,6 @@ footer > ul {
     position: fixed;
     transform: translateY(21rem) translateX(calc((100vw / 2) - 40px));
     width: 80px;
-
 }
 
 .arrow-left {
@@ -321,7 +320,6 @@ footer > ul {
   width: 5em;
   z-index: -1;
 }
-
 
 .arrow-right-flipped {
   background-color: white;
@@ -452,6 +450,7 @@ footer > ul {
     margin-top: 0;
     padding: 0 1.875em 2.62em 1.875em;
   }
+
   div.column-right {
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
@@ -476,18 +475,22 @@ footer > ul {
   ul#footer-ul > li.footer-li > a {
     font-size: 1.5em;
     width: 100%;
+
   }
   ul#footer-ul > li.footer-li {
     width: 100%;
   }
+
   tbody > tr > td {
     min-width: 8em;
     padding: 0;
     text-align: center;
   }
+
   tr th {
     display: none;
   }
+
   h2#employees {
       color: white;
       display: block;
@@ -662,6 +665,7 @@ td {
 }
 
 @media screen and (max-width: 1100px) {
+
     .grid {
     display: inline-block;
     height: auto;
@@ -670,10 +674,12 @@ td {
     padding-right: 1em;
     width: 50%;
   }
+
   .circle {
       border-radius: 100%;
       width: 24%;
   }
+
   .footer-row ul {
     clear: left;
     margin-left: auto;
@@ -683,6 +689,7 @@ td {
     padding-top: 45px;
     width: 82%;
   }
+
   .grid p  {
       display: inline-block;
       font-family: 'Quicksand', sans-serif;
@@ -693,6 +700,7 @@ td {
       text-align: center;
       text-transform: uppercase;
   }
+  
   .grid a {
     color: gray;
   }
