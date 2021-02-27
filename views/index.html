@@ -160,42 +160,79 @@
   </script>
   <script>
   ( () => {
-    window.addEventListener('DOMContentLoaded', () => {
-      console.log("button selector function active");
-      var array = ["#sidebar-title","#team","#home"];
-      console.log(array);
-      var arrayShift;
-      var arrowButton = document.querySelector('#arrow-container-id');
-      var status = arrowButton.getAttribute('datat-clicked');
-      var rightArrow = document.querySelector('#right-arrow');
-      var leftArrow = document.querySelector('#left-arrow');
+     window.addEventListener('DOMContentLoaded', () => {
+       // creates zones defined by pixels to decide whether to go up or down
+       var documentBottom = document.body.offsetHeight;
 
-      arrowButton.addEventListener('click', () => {
-        // arrowButton.location.href = array[0];
+       // create variables to identify parts of the arrow for animation purposes
+       var arrowButton = document.querySelector('#arrow-container-id');
+       var status = arrowButton.getAttribute('datat-clicked');
+       var rightArrow = document.querySelector('#right-arrow');
+       var leftArrow = document.querySelector('#left-arrow');
+       // create variables to get the top position of the elements in the document
+       var sideBarTitleTop = document.querySelector("#sidebar-title").getBoundingClientRect().top;
+       var teamTop = document.querySelector("#team").getBoundingClientRect().top;
+       var homeTop = document.querySelector("#home").getBoundingClientRect().top;
+       //get the available window height
+       var windowHeight = window.innerHeight;
+       var optimalHeight = (windowHeight / 3);
+       // calculate optimal heights for each section
 
-        console.log("arrayShift value is: " + arrayShift);
-        arrayShift = array.shift();
-        console.log("arrayShift value is: " + arrayShift);
-        console.log("array value is: " + array);
-        array.push(arrayShift);
-        console.log("array value is: " + array);
-          if (status === "true") {
-            rightArrow.className = "arrow-right-flipped";
-            rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
-            leftArrow.className = "arrow-left-flipped";
-            leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
-            status = "false";
-          } else {
-            rightArrow.className = "arrow-right";
-            rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
-            leftArrow.className = "arrow-left";
-            leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
-            status = "true";
-          }
-      });
-    });
-  })();
-  </script>
+       var sideBarOptimalHeight = (sideBarTitleTop - optimalHeight);
+       var teamOptimalHeight = (teamTop - optimalHeight);
+       var homeOptimalHeight = (homeTop - optimalHeight);
+
+       //put event listener on the arrow
+       arrowButton.addEventListener('click', () => {
+         // calculate how far down the window is scrolled.  It needs to be within the click event listener or else it will be calculated on the window load and never change
+         var currentWindowScrollTop = window.pageYOffset;
+           if (currentWindowScrollTop < 1000) {
+               // logic to make arrow css point down
+               rightArrow.className = "arrow-right";
+               rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               leftArrow.className = "arrow-left";
+               leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               status = "true";
+               //logic to scroll down to sidebar areas
+               window.scrollTo(0, sideBarOptimalHeight);
+             } else if (currentWindowScrollTop > 1000 && currentWindowScrollTop < 2000) {
+               // logic to make the css arrow point up
+               rightArrow.className = "arrow-right";
+               rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               leftArrow.className = "arrow-left";
+               leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               status = "true";
+               //logic to scroll down to sidebar areas
+               window.scrollTo(0, teamOptimalHeight);
+             } else if (currentWindowScrollTop > 2000 && currentWindowScrollTop < 3000) {
+               // logic to scroll back up to the top
+               rightArrow.className = "arrow-right-flipped";
+               rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               leftArrow.className = "arrow-left-flipped";
+               leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               status = "false";
+               window.scrollTo(0, documentBottom);
+             } else if (currentWindowScrollTop > 3000 && currentWindowScrollTop < 4000) {
+               // logic to scroll back up to the top
+               rightArrow.className = "arrow-right";
+               rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               leftArrow.className = "arrow-left";
+               leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               status = "false";
+               window.scrollTo(0, homeOptimalHeight);
+             } else {
+               // logic to scroll back up to the top
+               rightArrow.className = "arrow-right-flipped";
+               rightArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               leftArrow.className = "arrow-left-flipped";
+               leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
+               status = "false";
+               window.scrollTo(0, homeOptimalHeight);
+             }
+           });
+         });
+       })();
+     </script>
   <script>
   // Select all links with hashes
   $('a[href*="#"]')
