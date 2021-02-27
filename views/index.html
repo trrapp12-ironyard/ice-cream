@@ -194,7 +194,11 @@
                leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
                status = "true";
                //logic to scroll down to sidebar areas
-               window.scrollTo(0, sideBarOptimalHeight);
+               window.scrollTo({
+                 top: sideBarOptimalHeight,
+                 left: 0, 
+                 behavior: 'smooth'
+               });
              } else if (currentWindowScrollTop > 1000 && currentWindowScrollTop < 2000) {
                // logic to make the css arrow point up
                rightArrow.className = "arrow-right";
@@ -203,7 +207,11 @@
                leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
                status = "true";
                //logic to scroll down to sidebar areas
-               window.scrollTo(0, teamOptimalHeight);
+               window.scrollTo({
+                 top: teamOptimalHeight,
+                 left: 0,
+                 behavior: 'smooth'
+               });
              } else if (currentWindowScrollTop > 2000 && currentWindowScrollTop < 3000) {
                // logic to scroll back up to the top
                rightArrow.className = "arrow-right-flipped";
@@ -211,7 +219,11 @@
                leftArrow.className = "arrow-left-flipped";
                leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
                status = "false";
-               window.scrollTo(0, documentBottom);
+               window.scrollTo({
+                 top: documentBottom,
+                 left: 0,
+                 behavior: 'smooth'
+               });
              } else if (currentWindowScrollTop > 3000 && currentWindowScrollTop < 4000) {
                // logic to scroll back up to the top
                rightArrow.className = "arrow-right";
@@ -219,7 +231,11 @@
                leftArrow.className = "arrow-left";
                leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
                status = "false";
-               window.scrollTo(0, homeOptimalHeight);
+               window.scrollTo({
+                 top: homeOptimalHeight,
+                 left: 0,
+                 behavior: 'smooth'
+               });
              } else {
                // logic to scroll back up to the top
                rightArrow.className = "arrow-right-flipped";
@@ -227,7 +243,11 @@
                leftArrow.className = "arrow-left-flipped";
                leftArrow.style.transition = "all 800ms cubic-bezier(.64,-0.46,.38,1.41)";
                status = "false";
-               window.scrollTo(0, homeOptimalHeight);
+               window.scrollTo({
+                 top: homeOptimalHeight,
+                 left: 0,
+                 behavior: 'smooth'
+               });
              }
            });
          });
