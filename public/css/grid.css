@@ -55,7 +55,22 @@ h1 {
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-shadow: 1px 1px 20px black;
+  text-shadow: 1px 1px 20px purple;
+  transform: translateY(50%);
+  width: 50%;
+}
+.contact-h2:hover {
+  color: white;
+  font-family: "Josefin Slab", serif;
+  font-size: 5em;
+  font-weight: bolder;
+  line-height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 20px orange;
   transform: translateY(50%);
   width: 50%;
 }
@@ -384,7 +399,7 @@ footer > ul {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: rgb(160,160,160);
+  background-color: rgb(160,160,160, .5);
   top: 0;
   left: 0;
   z-index: 200;
@@ -409,65 +424,104 @@ footer > ul {
     width: 80%;
     margin: auto;
     height: 40%;
-    margin-top: 16vh;
+    margin-top: 10vh;
 }
 
-input[type=text], select, textarea {
-  width: 50%;
+input[type=text], input[type=submit], select, textarea {
+  width: 75%;
   margin: 1em 1em;
   padding: 1em;
   border-radius: 0px;
-  border: 2px solid #C0C0C0;
+  border: 2px solid purple;
   background: white;
   color: rgba(147, 117, 235, .4);
   font-family: "Josefin Slab", serif;
   font-size: 1em;
   font-weight: bolder;
 }
+input[type=text]:hover, select:hover, textarea:hover {
+  width: 75%;
+  margin: 1em 1em;
+  padding: 1em;
+  border-radius: 0px;
+  border: 2px solid orange;
+  background: rgba(265, 165, 0, .2);
+  color: white;
+  font-family: "Josefin Slab", serif;
+  font-size: 1em;
+  font-weight: bolder;
+}
+div .message {
+    width: 28vw;
+    height: 24vh;
+}
+
+div .submit-button {
+  width: 6vw;
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+}
+
+div .submit-button:hover {
+  width: 6vw;
+  background-color: orange;
+  color: white;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
 
 form {
     grid-template-areas:
-        "col-left-1 col-right-1"
-        "col-left-2 col-right-2"
-        "col-left-3 col-right-3"
-        "col-left-4 col-right-4";
+        "col1 message message"
+        "col2 message message"
+        "col3 message message"
+        "col4 col54 col6";
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 3fr;
-    height: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40vh;
+    display: grid;
 }
 
 .f-name {
-  grid-area: col-left-1;
+  display: grid;
+  grid-area: col1;
 
 }
 
 .f-name-input {
-  grid-area: col-right-1;
+  display: grid;
+  grid-area: col1;
 
 }
 
 .l-name {
-  grid-area: col-left-2;
+  display: grid;
+  grid-area: col2;
 
 }
 
 .l-name-input {
-  grid-area: col-right-2;
+  display: grid;
+  grid-area: col2;
 
 }
 
 .message {
-  grid-area: col-left-3;
+  display: grid;
+  grid-area: message;
 
 }
 
 .message-name-input {
-  grid-area: col-right-3;
+  display: grid;
+  grid-area: message;
 
 }
 
 .s-button {
-  grid-area: col-right-4;
+  display: grid;
+  grid-area: col6;
 
 }
 @media (max-width: 490px) {
