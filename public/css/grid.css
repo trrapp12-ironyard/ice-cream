@@ -11,27 +11,43 @@ html {
 
 body {
   display: grid;
-      grid-template-areas:
-          "header"
-          "photo"
-          "buffer"
-          "menu"
-          "buffer2"
-          "employees"
-          "footer";
-      grid-template-columns: 100%;
-      grid-template-rows: 0 100vh 45vh auto 20vh 124vh 16vh;
-      height: 100%;
-      margin: 0;
-      min-width: 100%;
-      padding: 0;
-      position: relative;
+  grid-template-areas:
+    "header"
+    "photo"
+    "buffer"
+    "menu"
+    "buffer2"
+    "employees"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 0 100vh 45vh auto 20vh 124vh 16vh;
+  height: 100%;
+  margin: 0;
+  min-width: 100%;
+  padding: 0;
+  position: relative;
 }
 /* Logo.css */
 h1 {
   color: white;
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
   font-size: 10em;
+  font-weight: bolder;
+  line-height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 20px black;
+  transform: translateY(50%);
+  width: 50%;
+}
+
+.contact-h2 {
+  color: white;
+  font-family: "Josefin Slab", serif;
+  font-size: 5em;
   font-weight: bolder;
   line-height: 220px;
   margin-left: auto;
@@ -49,25 +65,23 @@ h2 {
 }
 
 li {
-  color: #0000EE;
+  color: #0000ee;
 }
 
 li:hover {
-  background-color: #9375EB;
+  background-color: #9375eb;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 li:visited {
-  color: #0000EE;
+  color: #0000ee;
 }
 
 ul {
   display: grid;
-  grid-template-areas:
-    "nav1 nav2 nav3 nav4 nav5";
+  grid-template-areas: "nav1 nav2 nav3 nav4 nav5";
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 100%;
-
 }
 .navRow {
   grid-area: header;
@@ -99,9 +113,9 @@ ul {
   background-size: cover;
   grid-area: photo;
   grid-template-areas:
-  "photo1 photo2 photo3"
-  "photo4 photo5 photo6"
-  "photo7 photo8 photo9";
+    "photo1 photo2 photo3"
+    "photo4 photo5 photo6"
+    "photo7 photo8 photo9";
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
   height: 126%;
@@ -118,7 +132,7 @@ ul {
   font-family: "KR Sweet Tooth";
   font-size: 150px;
   line-height: 10px;
-  margin:-10px;
+  margin: -10px;
   padding: 0;
 }
 
@@ -133,7 +147,7 @@ ul {
 }
 
 li a {
-  color: #0000EE;
+  color: #0000ee;
 }
 
 ul {
@@ -143,15 +157,13 @@ ul {
 }
 
 li {
-
   border: 1px solid white;
   display: inline-block;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   height: 5.25px;
   margin: 0;
   text-decoration: none;
   text-transform: uppercase;
-
 }
 
 .align-left {
@@ -180,23 +192,23 @@ li {
 }
 
 #heading {
-  font-size: .2rem;
+  font-size: 0.2rem;
 }
 
 .employee-container {
-    display: grid;
-    grid-area: employees;
-    grid-template-areas:
-        "employee_title1 employee_title2 employee_title3"
-        "employee_left_c employee_center_c employee_right_c";
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 24vh 78vh;
+  display: grid;
+  grid-area: employees;
+  grid-template-areas:
+    "employee_title1 employee_title2 employee_title3"
+    "employee_left_c employee_center_c employee_right_c";
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 24vh 78vh;
 }
 
 .employee-title {
   color: white;
   display: grid;
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
   font-size: 4em;
   font-weight: bolder;
   grid-area: employee_title2;
@@ -223,15 +235,14 @@ li {
   display: grid;
   padding: 1rem;
   place-items: center;
-
 }
 
 .team-grid > div::before {
-    background-color: black;
-    content: "";
-    display: block;
-    grid-area: 1 / 1 / 2 / 2;
-    padding-bottom: 100%;
+  background-color: black;
+  content: "";
+  display: block;
+  grid-area: 1 / 1 / 2 / 2;
+  padding-bottom: 100%;
 }
 
 .team-grid > div > img {
@@ -240,14 +251,13 @@ li {
 }
 
 .grid-p {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1em;
   padding: 2rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 footer > ul {
   grid-template-columns: repeat(6, 1fr);
@@ -256,18 +266,18 @@ footer > ul {
 }
 
 .arrow-container {
-    background-color: transparent;
-    content: '';
-    display: grid;
-    grid-area: photo8;
-    grid-template-columns: 5em;
-    grid-template-rows: 5em;
-    height: 80px;
-    margin: auto;
-    padding: 0;
-    position: fixed;
-    transform: translateY(21rem) translateX(calc((100vw / 2) - 40px));
-    width: 80px;
+  background-color: transparent;
+  content: "";
+  display: grid;
+  grid-area: photo8;
+  grid-template-columns: 5em;
+  grid-template-rows: 5em;
+  height: 80px;
+  margin: auto;
+  padding: 0;
+  position: fixed;
+  transform: translateY(21rem) translateX(calc((100vw / 2) - 40px));
+  width: 80px;
 }
 
 .arrow-left {
@@ -289,7 +299,7 @@ footer > ul {
   background: white;
   border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  content: '';
+  content: "";
   display: flex;
   height: 1em;
   width: 5em;
@@ -314,7 +324,7 @@ footer > ul {
   background: white;
   border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  content: '';
+  content: "";
   display: flex;
   height: 1em;
   width: 5em;
@@ -338,7 +348,7 @@ footer > ul {
   background: white;
   border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  content: '';
+  content: "";
   display: flex;
   height: 1em;
   width: 5em;
@@ -363,15 +373,106 @@ footer > ul {
   background: white;
   border-radius: 6px 6px 6px 6px;
   box-shadow: 6px 6px 15px #656565, -6px -6px 15px #ffffff;
-  content: '';
+  content: "";
   display: flex;
   height: 1em;
   width: 5em;
   z-index: -1;
 }
 
-@media (max-width: 490px) {
+.contact-page-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgb(160,160,160);
+  top: 0;
+  left: 0;
+  z-index: 200;
+  overflow: auto;
+  display: block;
+}
 
+.contact-page-modal-content {
+  background-color: white;
+  margin: auto;
+  margin-top: 10vh;
+  height: 80%;
+  width: 60%;
+  top: 10vh;
+  border-radius: 57px;
+  background: white;
+  box-shadow:  41px 41px 84px #636363,
+               -41px -41px 84px #ffffff;
+}
+
+.form-container {
+    width: 80%;
+    margin: auto;
+    height: 40%;
+    margin-top: 16vh;
+}
+
+input[type=text], select {
+  width: 50%;
+  margin: 1em 1em;
+  padding: 1em 1em;
+  border: white;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow:  -26px 26px 25px #e6e6e6,
+               26px -26px 25px #ffffff;
+  color: gray;
+  font-family: "Josefin Slab", serif;
+  font-size: 1em;
+font-weight: bolder;
+}
+
+form {
+    grid-template-areas:
+        "col-left-1 col-right-1"
+        "col-left-2 col-right-2"
+        "col-left-3 col-right-3"
+        "col-left-4 col-right-4";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    height: 60%;
+}
+
+.f-name {
+  grid-area: col-left-1;
+
+}
+
+.f-name-input {
+  grid-area: col-right-1;
+
+}
+
+.l-name {
+  grid-area: col-left-2;
+
+}
+
+.l-name-input {
+  grid-area: col-right-2;
+
+}
+
+.message {
+  grid-area: col-left-3;
+
+}
+
+.message-name-input {
+  grid-area: col-right-3;
+
+}
+
+.s-button {
+  grid-area: col-right-4;
+
+}
+@media (max-width: 490px) {
   .nav-li-left {
     display: block;
     float: none;
@@ -406,15 +507,14 @@ footer > ul {
     max-height: 62.5em;
     position: relative;
     width: auto;
-
   }
 
   #heading {
-    font-size: .2rem;
+    font-size: 0.2rem;
   }
 
   #nav {
-    position:relative;
+    position: relative;
   }
 
   div.column-left {
@@ -425,16 +525,16 @@ footer > ul {
     min-height: fit-content;
     padding: 0;
     width: 100%;
-}
+  }
   .sidebar {
     display: inline-block;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 1em;
     margin-top: 0;
     padding: 0 1.875em 2.62em 1.875em;
   }
 
-  p#sidebar-title.sidebar{
+  p#sidebar-title.sidebar {
     font-size: 1.5em;
     line-height: normal;
     margin-top: 0;
@@ -445,7 +545,7 @@ footer > ul {
 
   div.address > p.sidebar {
     display: inline-block;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 0.75em;
     margin-top: 0;
     padding: 0 1.875em 2.62em 1.875em;
@@ -453,7 +553,7 @@ footer > ul {
 
   div.column-right {
     display: inline-block;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
   }
 
   .table {
@@ -475,7 +575,6 @@ footer > ul {
   ul#footer-ul > li.footer-li > a {
     font-size: 1.5em;
     width: 100%;
-
   }
   ul#footer-ul > li.footer-li {
     width: 100%;
@@ -492,19 +591,19 @@ footer > ul {
   }
 
   h2#employees {
-      color: white;
-      display: block;
-      font-family: 'Josefin Slab', serif;
-      font-size: 3em;
-      font-weight: bolder;
-      line-height: 20px;
-      max-height: 4.1em;
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-      text-shadow: 1px 1px 20px black;
-      top: 1.5em;
-      width: 100%;
+    color: white;
+    display: block;
+    font-family: "Josefin Slab", serif;
+    font-size: 3em;
+    font-weight: bolder;
+    line-height: 20px;
+    max-height: 4.1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 20px black;
+    top: 1.5em;
+    width: 100%;
   }
 
   ul#footer-ul > li.footer-li {
@@ -519,7 +618,6 @@ footer > ul {
     text-align: center;
     width: 100%;
   }
-
 }
 
 /* body.css */
@@ -545,13 +643,13 @@ footer > ul {
 }
 
 .contact {
-  line-height:1;
+  line-height: 1;
   margin: 0 3em 0 3em;
 }
 
 .sidebar {
   display: inline-block;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.75em;
   margin-top: 0;
   padding: 0 1.875em 2.62em 1.875em;
@@ -573,11 +671,11 @@ footer > ul {
 
 .column-right {
   display: inline-block;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-tbody tr:nth-child(2n+2) {
-   background-color: #ccc;
+tbody tr:nth-child(2n + 2) {
+  background-color: #ccc;
 }
 
 tr th {
@@ -596,7 +694,7 @@ td {
 }
 
 .address {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 #header-modified {
@@ -605,7 +703,7 @@ td {
 
 .footer {
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   grid-area: footer;
   line-height: 250%;
   margin-left: auto;
@@ -638,8 +736,7 @@ td {
   display: grid;
   grid-area: menu;
   grid-gap: 10%;
-  grid-template-areas:
-    "container_left container_right";
+  grid-template-areas: "container_left container_right";
   grid-template-columns: 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
@@ -647,17 +744,17 @@ td {
 }
 
 .footer-row ul {
-    clear: left;
-    display: grid;
-    grid-template-areas: "nav1 nav2 nav3 nav4 nav5";
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding: 0;
-    padding-top: 45px;
-    width: 100%;
+  clear: left;
+  display: grid;
+  grid-template-areas: "nav1 nav2 nav3 nav4 nav5";
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding: 0;
+  padding-top: 45px;
+  width: 100%;
 }
 
 .grid p {
@@ -665,8 +762,7 @@ td {
 }
 
 @media screen and (max-width: 1100px) {
-
-    .grid {
+  .grid {
     display: inline-block;
     height: auto;
     margin-top: 4em;
@@ -676,8 +772,8 @@ td {
   }
 
   .circle {
-      border-radius: 100%;
-      width: 24%;
+    border-radius: 100%;
+    width: 24%;
   }
 
   .footer-row ul {
@@ -690,17 +786,16 @@ td {
     width: 82%;
   }
 
-  .grid p  {
-      display: inline-block;
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20px;
-      margin-left: 30px;
-      margin-top: 24px;
-      position: absolute;
-      text-align: center;
-      text-transform: uppercase;
+  .grid p {
+    display: inline-block;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 24px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
   }
-  
   .grid a {
     color: gray;
   }
@@ -718,7 +813,7 @@ td {
 .footer-li {
   background-color: gray;
   display: inline-block;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-variant: small-caps;
   padding-left: 10px;
   padding-right: 10px;

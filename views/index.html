@@ -143,6 +143,23 @@
       </div>
     </footer>
     <!--footer end-->
+    <div id="contact-page-modal" class="contact-page-modal">
+      <div class="contact-page-modal-content">
+        <span class="close"></span>
+        <h2 class="contact-h2">Contact Form</h2>
+        <div class="form-container">
+          <form>
+              <div class="label f-name"><label for="fname">First name:</label><br></div>
+              <div class="input f-name-input"><input type="text" id="fname" name="fname" value="John"><br></div>
+              <div class="label l-name"><label for="lname">Last name:</label><br></div>
+              <div class="input l-name-input"><input type="text" id="lname" name="lname" value="Doe"><br></div>
+              <div class="label message"><label for="message">Message</label><br></div>
+              <div class="input message-name-input"><textarea id="message" placeholder="message here"></textarea></div>
+              <div class="label s-button"><input type="submit" value="Submit"></div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="src/menu.js">
   </script>
@@ -327,28 +344,4 @@
   });
  })();
   </script>
-  <!-- <script>
-  (() => {
-    window.addEventListener('DOMContentLoaded', () => {
-      console.log('firing scroll window listener');
-
-      document.querySelectorAll("a[href=linkRegex]").addEventListener('click', (e) => {
-        console.log("firing nav scroll height click event");
-        //select Nav element
-        let navbar = document.querySelector('nav');
-        //calculate nav element height
-        let navbarheight = parseInt(window.getComputedStyle(navbar).height);
-        //find target placement and calculate height from there
-        // let scrollHeight = document.querySelector(e.target.hashk).offsetTop - (navbarheight / 2);
-        //scroll
-        window.scroll(0, scrollHeight);
-        //update window locaiton
-        window.location.hash = e.target.hash;
-        //don't prevent default action
-        e.preventDefault();
-
-      })
-    })
-  })();
-  </script> -->
 </html>
