@@ -145,7 +145,7 @@
     <!--footer end-->
     <div id="contact-page-modal" class="contact-page-modal">
       <div class="contact-page-modal-content">
-        <span class="close"></span>
+        <span id="close" class="close">&times;</span>
         <h2 class="contact-h2">Contact Form</h2>
         <div class="form-container">
           <form>
@@ -179,7 +179,8 @@
       document.querySelector('#link2').addEventListener('click', () => {location.href = '#menu'});
       document.querySelector('#link3').addEventListener('click', () => {location.href = '#sidebar-title'});
       document.querySelector('#link4').addEventListener('click', () => {location.href = '#team'});
-      document.querySelector('#link5').addEventListener('click', () => {location.href = 'https://trrapp12.github.io/Sundae-Worship/contact.html'});
+      // document.querySelector('#link5').addEventListener('click', () => {location.href = 'https://trrapp12.github.io/Sundae-Worship/contact.html'});
+      // contact link is being handled in it's own script further down
     });
   }());
   </script>
@@ -351,5 +352,29 @@
       })
   });
  })();
+  </script>
+  <script>
+(() => {
+  console.log("contact script loading");
+  window.addEventListener('DOMContentLoaded', () => {
+    var modalWindow = document.querySelector('#contact-page-modal');
+
+    document.querySelector('#close').addEventListener('click', () => {
+      modalWindow.style.display = "none";
+    })
+
+    document.querySelector("#link5").addEventListener('click', () => {
+      console.log("contact link clicked");
+      modalWindow.style.display = 'grid';
+    });
+
+    window.onclick = function (event) {
+    if (event.target === modal) {
+      modalWindow.style.display = "none";
+    };
+  };
+
+  });
+})();
   </script>
 </html>
