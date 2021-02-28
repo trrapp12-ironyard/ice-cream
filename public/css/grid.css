@@ -412,19 +412,17 @@ footer > ul {
     margin-top: 16vh;
 }
 
-input[type=text], select {
+input[type=text], select, textarea {
   width: 50%;
   margin: 1em 1em;
-  padding: 1em 1em;
-  border: white;
+  padding: 1em;
   border-radius: 0px;
-  background: #ffffff;
-  box-shadow:  -26px 26px 25px #e6e6e6,
-               26px -26px 25px #ffffff;
-  color: gray;
+  border: 2px solid #C0C0C0;
+  background: white;
+  color: rgba(147, 117, 235, .4);
   font-family: "Josefin Slab", serif;
   font-size: 1em;
-font-weight: bolder;
+  font-weight: bolder;
 }
 
 form {
