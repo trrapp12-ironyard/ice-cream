@@ -632,8 +632,8 @@ form {
   .sidebar {
     display: inline-block;
     font-family: "Quicksand", sans-serif;
-    font-size: 1em;
-    margin-top: 0;
+    font-size: 1.75em;
+    margin-top: 2em;
     padding: 0 1.875em 2.62em 1.875em;
   }
 
@@ -754,7 +754,15 @@ form {
   display: inline-block;
   font-family: "Quicksand", sans-serif;
   font-size: 1.75em;
-  margin-top: 0;
+  margin-top: 2em;
+  padding: 0 1.875em 2.62em 1.875em;
+}
+
+.sidebar-text {
+  display: inline-block;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  margin-top: 2em;
   padding: 0 1.875em 2.62em 1.875em;
 }
 
@@ -762,7 +770,25 @@ form {
   font-size: 2em;
   line-height: normal;
   margin-top: 0;
-  padding: 1em;
+  padding: 2em;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #A663A6;
+}
+
+#sidebar-title:hover {
+  font-size: 2em;
+  line-height: normal;
+  margin-top: 0;
+  padding: 2em;
+  color:  #FFDB99;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color:  white;
+  transition: color 500ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
+
 }
 
 .table {
