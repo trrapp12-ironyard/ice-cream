@@ -410,7 +410,6 @@ footer > ul {
 }
 
 .contact-page-modal-content {
-  /* background-color: gray; */
   margin: auto;
   margin-top: 10vh;
   height: 85%;
@@ -419,7 +418,7 @@ footer > ul {
   border-radius: 57px;
   background: white;
   box-shadow: 41px 41px 84px #636363, -41px -41px 84px #ffffff;
-  background: #e8e8e8;
+  background: orange;
 }
 
 .form-container {
