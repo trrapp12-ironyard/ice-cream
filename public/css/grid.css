@@ -540,22 +540,32 @@ form {
   font-family: "Josefin Slab", serif;
   font-size: 5em;
   font-weight: bolder;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 65rem;
   position: relative;
   text-align: center;
   text-decoration: none;
   text-shadow: 1px 1px 20px purple;
-  margin-left: 2.75rem;
+  margin-right: auto;
   height: 1vw;
   top: 1.25rem;
+
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg)}
+  25% {transform: rotate(90deg)}
+  50% {transform: rotate(180deg)}
+  75% {transform: rotate(270deg)}
+  100% {transform: rotate(360deg)}
 }
 
 .close:hover {
-
-    font-size: 5.25em;
     text-shadow: 1px 1px 25px rgba(128, 0, 128, 1.0), 1px 1px 70px rgba(255, 165, 0, .7), 1px 1px 80px rgba(255, 255, 255, .05);
+    animation-name: rotate;
+    animation-duration: 2s;
+    cursor: default;
 }
+
 @media (max-width: 490px) {
   .nav-li-left {
     display: block;
