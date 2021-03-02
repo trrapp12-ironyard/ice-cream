@@ -52,7 +52,7 @@
   <div class="container"> <!--container start-->
     <div>
       <div class="address">
-        <p class="sidebar" id="sidebar-title">
+        <p class="sidebar sidebar-title" id="sidebar-title">
           550 Ice Cream Lane
           Mulberry Hollow,
           Utah
@@ -62,7 +62,7 @@
           208-208-2080
         </p>
         <div class="address">
-          <p class="sidebar-text">Sundae Worship began like every good love story -- with two young people who are brought together over a scoop of ice-cream, the first blushes of love and copious amounts of unhealthy obsession.  <br><br> Except there was only one person (a lonely bachelor), no love, and only an empty carton of Ben and Jerry's to go with the copious amounts of unhealthy obsession. <br><br> This project began as an introductory project in a coding bootcamp.  It was supposed to be a single static webpage which used HTML &lt;table&gt; tags to create a menu on a static website.  Over the years I have come back to it again and again.  The static tables made in html were updated to tables drawn with JavaScript.  <br><br> I was successful at that.  <br><br> But then that wasn’t enough.  I thought why not just build a backend with MVC architecture.  And I was successful at that.  So here it is today.  A beautiful project made with a little bit of love and an unwarranted amount of obsession.
+          <p class="sidebar sidebar-text">Sundae Worship began like every good love story -- with two young people who are brought together over a scoop of ice-cream, the first blushes of love and copious amounts of unhealthy obsession.  <br><br> Except there was only one person (a lonely bachelor), no love, and only an empty carton of Ben and Jerry's to go with the copious amounts of unhealthy obsession. <br><br> This project began as an introductory project in a coding bootcamp.  It was supposed to be a single static webpage which used HTML &lt;table&gt; tags to create a menu on a static website.  Over the years I have come back to it again and again.  The static tables made in html were updated to tables drawn with JavaScript.  <br><br> I was successful at that.  <br><br> But then that wasn’t enough.  I thought why not just build a backend with MVC architecture.  And I was successful at that.  So here it is today.  A beautiful project made with a little bit of love and an unwarranted amount of obsession.
           </p>
         </div>
       </div>
@@ -145,7 +145,7 @@
     <!--footer end-->
     <div id="contact-page-modal" class="contact-page-modal">
       <div class="contact-page-modal-content">
-        <span id="close" class="close">&times;</span>
+        <div id="close" class="close">&times;</div>
         <h2 class="contact-h2">Contact Form</h2>
         <div class="form-container">
           <form>
@@ -173,9 +173,9 @@
   </script>
   <script>
   (function(){
-    console.log("adding script tags");
+    console.log("adding script tags")
     window.addEventListener('DOMContentLoaded', (event) => {
-      document.querySelector('#link1').addEventListener('click', () => {location.href = '#home'});
+      document.querySelector('#link1').addEventListener('click', () => {location.href = '#home';});
       document.querySelector('#link2').addEventListener('click', () => {location.href = '#menu'});
       document.querySelector('#link3').addEventListener('click', () => {location.href = '#sidebar-title'});
       document.querySelector('#link4').addEventListener('click', () => {location.href = '#team'});
@@ -192,7 +192,7 @@
 
        // create variables to identify parts of the arrow for animation purposes
        var arrowButton = document.querySelector('#arrow-container-id');
-       var status = arrowButton.getAttribute('datat-clicked');
+       var status = arrowButton.getAttribute('data-clicked');
        var rightArrow = document.querySelector('#right-arrow');
        var leftArrow = document.querySelector('#left-arrow');
        // create variables to get the top position of the elements in the document
