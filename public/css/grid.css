@@ -46,17 +46,21 @@ h1 {
 
 .contact-h2 {
   color: white;
-  font-family: "Josefin Slab", serif;
-  font-size: 5em;
-  font-weight: bolder;
-  line-height: 220px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 1px 1px 20px purple;
-  width: 50%;
+      font-family: "Josefin Slab", serif;
+      font-size: 5em;
+      font-weight: bolder;
+      line-height: 220px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 1px 1px 20px purple;
+      width: 50%;
+      border-bottom: 2px solid purple;
+      margin-bottom: -113px;
+      height: 1.43em;
+
 }
 .contact-h2:hover {
   color: white;
@@ -406,7 +410,7 @@ footer > ul {
 }
 
 .contact-page-modal-content {
-  background-color: white;
+  /* background-color: gray; */
   margin: auto;
   margin-top: 10vh;
   height: 85%;
@@ -415,13 +419,17 @@ footer > ul {
   border-radius: 57px;
   background: white;
   box-shadow: 41px 41px 84px #636363, -41px -41px 84px #ffffff;
+  background: #e8e8e8;
 }
 
 .form-container {
-    width: 80%;
-    margin: auto;
-    height: 40%;
-    margin-top: 10vh;
+  width: 100%;
+  margin: auto;
+  height: 70%;
+  margin-top: 17vh;
+  background: white;
+  border-bottom-left-radius: 57px;
+  border-bottom-right-radius: 57px;
 }
 
 input[type=text], input[type=submit], select, textarea {
@@ -479,15 +487,17 @@ div .submit-button:hover {
 }
 
 form {
-    grid-template-areas:
-        "col1 message message"
-        "col2 message message"
-        "col3 message message"
-        "col4 col54 col6";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 40vh;
-    display: grid;
+  grid-template-areas:
+      "col1 message message"
+      "col2 message message"
+      "col3 message message"
+      "col4 col54 col6";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 40vh;
+  display: grid;
+  padding: 9vh;
+
 }
 
 .f-name {
