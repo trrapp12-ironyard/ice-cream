@@ -46,23 +46,23 @@ h1 {
 }
 
 .contact-h2 {
+  border-bottom: 2px solid purple;
   color: white;
-      font-family: "Josefin Slab", serif;
-      font-size: 5em;
-      font-weight: bolder;
-      line-height: 220px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-      text-shadow: 1px 1px 20px purple;
-      width: 50%;
-      border-bottom: 2px solid purple;
-      margin-bottom: -113px;
-      height: 1.43em;
-
+  font-family: "Josefin Slab", serif;
+  font-size: 5em;
+  font-weight: bolder;
+  height: 1.43em;
+  line-height: 220px;
+  margin-bottom: -113px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 20px purple;
+  width: 50%;
 }
+
 .contact-h2:hover {
   color: white;
   font-family: "Josefin Slab", serif;
@@ -399,94 +399,99 @@ footer > ul {
 }
 
 .contact-page-modal {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: rgb(160,160,160, .5);
-  top: 0;
-  left: 0;
-  z-index: 200;
-  overflow: auto;
+  background-color: rgb(160,160,160);
+  background-color: rgba(160,160,160,.5);
   display: none;
+  height: 100%;
+  overflow: auto;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
 }
 
 .contact-page-modal-content {
+  background: orange;
+  border-radius: 57px;
+  box-shadow: 41px 41px 84px #636363, -41px -41px 84px #ffffff;
+  height: 85%;
   margin: auto;
   margin-top: 10vh;
-  height: 85%;
-  width: 60%;
   top: 10vh;
-  border-radius: 57px;
-  background: white;
-  box-shadow: 41px 41px 84px #636363, -41px -41px 84px #ffffff;
-  background: orange;
+  width: 60%;
 }
 
 .form-container {
-  width: 100%;
-  margin: auto;
-  height: 78%;
-  margin-top: 17vh;
   background: white;
   border-bottom-left-radius: 57px;
   border-bottom-right-radius: 57px;
+  height: 78%;
+  margin: auto;
+  margin-top: 17vh;
+  width: 100%;
 }
 
 input[type=text], input[type=submit], select, textarea {
-  width: 75%;
-  margin: 1em 1em;
-  padding: 1em;
-  border-radius: 0px;
-  border: 2px solid purple;
   background: white;
+  border: 2px solid purple;
+  border-radius: 0;
+  color: rgb(147, 117, 235);
   color: rgba(147, 117, 235, .4);
   font-family: "Josefin Slab", serif;
   font-size: 1em;
   font-weight: bolder;
-}
-input[type=text]:hover, select:hover, textarea:hover {
-  width: 75%;
   margin: 1em 1em;
   padding: 1em;
-  border-radius: 0px;
+  width: 75%;
+}
+input[type=text]:hover, select:hover, textarea:hover {
+
+  border-radius: 0;
   border: 2px solid orange;
   color: white;
   font-family: "Josefin Slab", serif;
   font-size: 1em;
   font-weight: bolder;
+  margin: 1em 1em;
+  padding: 1em;
+  width: 75%;
 }
+
 div .message {
-    width: 28vw;
-    height: 24vh;
+    color: rgb(147, 117, 235);
     color: rgba(147, 117, 235, .4);
+    height: 24vh;
+    width: 28vw;
 }
 
 div .message:hover {
-    width: 28vw;
-    height: 24vh;
     color: white;
+    height: 24vh;
+    width: 28vw;
 }
 
 div .submit-button {
-    width: 6vw;
     background-color: purple;
-    color: white;
     border-radius: 10px;
-    margin-right: 0;
+    color: white;
     margin-left: 9vw;
+    margin-right: 0;
+    width: 6vw;
 }
 
 div .submit-button:hover {
-  width: 6vw;
   background-color: orange;
-  color: white;
   border: 2px solid orange;
   border-radius: 10px;
-  margin-right: 0;
+  color: white;
   margin-left: 9vw;
+  margin-right: 0;
+  width: 6vw;
 }
 
 form {
+  display: grid;
   grid-template-areas:
       "col1 message message"
       "col2 message message"
@@ -495,7 +500,6 @@ form {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   height: 40vh;
-  display: grid;
   padding: 9vh;
 }
 
@@ -540,30 +544,31 @@ form {
   grid-area: col6;
 
 }
+
 .email {
   display: grid;
   grid-area: col3;
 }
+
 .close {
   color: white;
   font-family: "Josefin Slab", serif;
   font-size: 5em;
   font-weight: bolder;
+  height: 1vw;
   margin-left: 65rem;
+  margin-right: auto;
   position: relative;
   text-align: center;
   text-decoration: none;
   text-shadow: 2px 2px 7px rgba(128,0,128,0.49);
-  margin-right: auto;
-  height: 1vw;
-
 }
 
 .close:hover {
+    cursor: default;
     text-shadow: 2px 2px 14px rgba(128,0,128,1);
     transform: rotateZ(360deg);
     transform-origin: center;
-    cursor: default;
     transition-duration: 4s;
     transition-timing-function: ease-in-out;
 }
@@ -672,6 +677,7 @@ form {
     font-size: 1.5em;
     width: 100%;
   }
+  
   ul#footer-ul > li.footer-li {
     width: 100%;
   }
