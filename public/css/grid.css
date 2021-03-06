@@ -970,3 +970,114 @@ td {
   }
 }
 /* media query 1100px end */
+
+/* media query 1450px */
+
+@media only screen and (max-width: 1450px) {
+
+  form {
+    display: grid;
+    grid-template-areas:
+        "col1 col1"
+        "col2 col2"
+        "col3 col3"
+        "col4 submit";
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 1fr;
+    height: 67vh;
+    padding: 4vh;
+  }
+
+  .form-container {
+    background: white;
+    border-bottom-left-radius: 57px;
+    border-bottom-right-radius: 57px;
+    display: grid;
+    grid-column: 1 / 41;
+    grid-row: 2 / 3;
+    height: 59%;
+    margin: auto;
+    margin-top: 17vh;
+    width: 100%;
+  }
+
+  .f-name-input {
+    display: grid;
+    grid-area: col1;
+  }
+
+  .l-name-input {
+    display: grid;
+    grid-area: col2;
+  }
+
+  .email {
+    display: grid;
+    grid-area: col3;
+  }
+
+  .message-name-input {
+    display: grid;
+    grid-area: col4;
+  }
+
+  .s-button {
+    display: grid;
+    grid-area: col5;
+    height: .5vh;
+  }
+
+  div .submit-button {
+    background-color: purple;
+    border-radius: 10px;
+    color: white;
+    margin-left: 9vw;
+    margin-right: 0;
+    width: 6vw;
+  }
+
+  input[type=text], input[type=submit], select, textarea {
+    background: white;
+    border: 2px solid purple;
+    border-radius: 0;
+    color: rgb(147, 117, 235);
+    color: rgba(147, 117, 235, .4);
+    font-family: "Josefin Slab", serif;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 1em;
+  }
+
+  .contact-h2 {
+    border-bottom: 2px solid purple;
+    color: white;
+    display: grid;
+    font-family: "Josefin Slab", serif;
+    font-size: 3em;
+    font-weight: bolder;
+    grid-column: 1 / 40;
+    grid-row: 1 / 2;
+    line-height: 133px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 20px purple;
+  }
+
+  .contact-page-modal-content {
+    background: orange;
+    border-radius: 57px;
+    box-shadow: 41px 41px 84px #636363, -41px -41px 84px #ffffff;
+    display: grid;
+    grid-template-columns: repeat(40, minmax(10px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 75%;
+    margin: auto;
+    margin-top: 10vh;
+    top: 10vh;
+    width: 60%;
+  }
+
+}
