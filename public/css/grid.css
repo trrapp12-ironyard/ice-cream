@@ -978,12 +978,12 @@ td {
   form {
     display: grid;
     grid-template-areas:
-        "col1 col1"
-        "col2 col2"
-        "col3 col3"
-        "col4 submit";
-    grid-template-rows: 1fr;
-    grid-template-columns: 4fr 1fr;
+      "col1"
+      "col2"
+      "col3"
+      "col4"
+      "col5";
+    grid-template-columns: 100%;
     height: 67vh;
     padding: 4vh;
   }
@@ -995,9 +995,9 @@ td {
     display: grid;
     grid-column: 1 / 41;
     grid-row: 2 / 3;
-    height: 59%;
+    height: 72%;
     margin: auto;
-    margin-top: 17vh;
+    margin-top: 9vh;
     width: 100%;
   }
 
@@ -1016,6 +1016,7 @@ td {
     grid-area: col3;
   }
 
+
   .message-name-input {
     display: grid;
     grid-area: col4;
@@ -1024,7 +1025,6 @@ td {
   .s-button {
     display: grid;
     grid-area: col5;
-    height: .5vh;
   }
 
   div .submit-button {
@@ -1034,6 +1034,30 @@ td {
     margin-left: 9vw;
     margin-right: 0;
     width: 6vw;
+  }
+
+  div .submit-button:hover {
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: white;
+    grid-area: col5;
+    margin-left: 9vw;
+    margin-right: 0;
+    width: 6vw;
+}
+
+  div .message {
+    color: rgb(147, 117, 235);
+    color: rgba(147, 117, 235, .4);
+    height: 17vh;
+    width: 38vw;
+  }
+
+  div .message:hover {
+    color: white;
+    height: 17vh;
+    width: 38vw;
   }
 
   input[type=text], input[type=submit], select, textarea {
