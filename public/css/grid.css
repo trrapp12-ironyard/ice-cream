@@ -482,9 +482,9 @@ div .submit-button {
     background-color: purple;
     border-radius: 10px;
     color: white;
-    margin-left: 9vw;
+    margin-left: 3vw;
     margin-right: 0;
-    width: 6vw;
+    width: 12vw;
 }
 
 div .submit-button:hover {
@@ -492,9 +492,9 @@ div .submit-button:hover {
   border: 2px solid orange;
   border-radius: 10px;
   color: white;
-  margin-left: 9vw;
+  margin-left: 3vw;
   margin-right: 0;
-  width: 6vw;
+  width: 12vw;
 }
 
 form {
@@ -1002,6 +1002,29 @@ td {
     width: 100%;
   }
 
+  form > div > .submit-button {
+    background-color: purple;
+    border: 2px solid purple;
+    border-radius: 10px;
+    color: white;
+    font-family: "Josefin Slab", serif;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 1em;
+    margin-left: 67%;
+    margin-top: 2em;
+    width: 12vw;
+  }
+
+  form > div > .submit-button:hover {
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 10px;
+    margin-left: 67%;
+    margin-top: 2em;
+    width: 12vw;
+  }
+
   .f-name-input {
     display: grid;
     grid-area: col1;
@@ -1034,23 +1057,20 @@ td {
   div .submit-button {
     background-color: purple;
     border-radius: 10px;
-    color: white;
-    margin-left: 9vw;
+    background-color: purple;
     margin-right: 0;
-    width: 9vw;
     height: 6vh;
-    margin-left: 33vw;
+    margin-left: 3vw;
+    width: 12vw;
   }
 
   div .submit-button:hover {
     background-color: orange;
     border: 2px solid orange;
     border-radius: 10px;
-    color: white;
-    grid-area: col5;
-    margin-left: 9vw;
+    margin-left: 3vw;
     margin-right: 0;
-    width: 6vw;
+    width: 12vw;
 }
 
 div .message {
@@ -1154,13 +1174,6 @@ div .message {
     text-decoration: none;
     text-shadow: 2px 2px 7px rgb(128 0 128 / 49%);
     width: 10vh;
-  }
-
-
-  form > div > .submit-button {
-    margin-left: 67%;
-    margin-top: 2em;
-    width: 20%;
   }
 
 }
