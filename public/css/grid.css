@@ -976,30 +976,32 @@ td {
 @media only screen and (max-width: 1450px) {
 
   form {
-    display: grid;
-    grid-template-areas:
-        "col1"
-        "col2"
-        "col3"
-        "col4"
-        "col5";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    height: 66vh;
-    padding: 1vh;
+      display: grid;
+      grid-template-areas:
+          "col1"
+          "col2"
+          "col3"
+          "col4"
+          "col5";
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      height: 62vh;
+      padding: 1vh;
+      width: 100%;
+      padding-top: 4vh;
   }
 
   .form-container {
-    background: white;
-    border-bottom-left-radius: 57px;
-    border-bottom-right-radius: 57px;
-    display: grid;
-    grid-column: 1 / 41;
-    grid-row: 2 / 3;
-    height: 88%;
-    margin: auto;
-    margin-top: 9vh;
-    width: 100%;
+      background: white;
+      border-bottom-left-radius: 57px;
+      border-bottom-right-radius: 57px;
+      display: grid;
+      grid-column: 1 / 41;
+      grid-row: 2 / 3;
+      height: 100%;
+      margin: auto;
+      margin-top: 5vh;
+      width: 100%;
   }
 
   form > div > .submit-button {
@@ -1018,6 +1020,7 @@ td {
 
   form > div > .submit-button:hover {
     background-color: orange;
+    color: white;
     border: 2px solid orange;
     border-radius: 10px;
     margin-left: 67%;
@@ -1045,33 +1048,15 @@ td {
   }
 
   .message-name-input {
-    display: grid;
-    grid-area: col4;
+      display: grid;
+      grid-area: col4;
+      margin-top: 2vh;
   }
 
   .s-button {
     display: grid;
     grid-area: col5;
   }
-
-  div .submit-button {
-    background-color: purple;
-    border-radius: 10px;
-    background-color: purple;
-    margin-right: 0;
-    height: 6vh;
-    margin-left: 3vw;
-    width: 12vw;
-  }
-
-  div .submit-button:hover {
-    background-color: orange;
-    border: 2px solid orange;
-    border-radius: 10px;
-    margin-left: 3vw;
-    margin-right: 0;
-    width: 12vw;
-}
 
 div .message {
     background: white;
@@ -1093,28 +1078,63 @@ div .message {
 
   div .message:hover {
     color: white;
-    height: 4vh;
+    height: 9vh;
     padding: 1em;
     width: 70%;
     margin: auto;
   }
 
   input[type=text], input[type=submit], select, textarea {
-    background: white;
-    border: 2px solid purple;
-    border-radius: 0;
-    color: rgb(147, 117, 235);
-    color: rgba(147, 117, 235, .4);
-    font-family: "Josefin Slab", serif;
-    font-size: 1em;
-    font-weight: bolder;
-    margin: 1em 1em;
-    padding: 1em;
-    width: 70%;
-    margin: auto;
+      background: white;
+      border: 2px solid purple;
+      border-radius: 0;
+      color: rgb(147, 117, 235);
+      color: rgba(147, 117, 235, .4);
+      font-family: "Josefin Slab", serif;
+      font-size: 1em;
+      font-weight: bolder;
+      margin: 1em 1em;
+      padding: 1em;
+      width: 70%;
+      margin: auto;
+      margin-top: 3vh;
+  }
+
+  input[type=text]:hover, input[type=submit]:hover, select:hover, textarea:hover {
+      background: white;
+      border: 2px solid orange;
+      border-radius: 0;
+      color: rgb(147, 117, 235);
+      color: rgba(147, 117, 235, .4);
+      font-family: "Josefin Slab", serif;
+      font-size: 1em;
+      font-weight: bolder;
+      margin: 1em 1em;
+      padding: 1em;
+      width: 70%;
+      margin: auto;
+      margin-top: 3vh;
   }
 
   .contact-h2 {
+    border-bottom: 2px solid purple;
+    color: white;
+    display: grid;
+    font-family: "Josefin Slab", serif;
+    font-size: 3em;
+    font-weight: bolder;
+    grid-column: 1 / 40;
+    grid-row: 1 / 2;
+    line-height: 133px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 20px purple;
+  }
+
+  .contact-h2:hover {
     border-bottom: 2px solid purple;
     color: white;
     display: grid;
@@ -1156,9 +1176,8 @@ div .message {
     margin: auto;
     margin-top: 10vh;
     top: 10vh;
-    width: 60%;
+    width: 59%;
   }
-
 
   .close {
     color: white;
