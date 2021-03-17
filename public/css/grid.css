@@ -594,8 +594,6 @@ form {
   margin-right: -1em;
 }
 
-
-
 /* body.css */
 .empty {
   border: 0;
@@ -745,9 +743,6 @@ td {
   display: none;
 }
 
-
-
-
 /* footer.css */
 
 .button {
@@ -773,6 +768,27 @@ td {
   width: 75%;
 }
 
+.cookie-banner-container {
+  background-color: red;
+  display: grid;
+  grid-template-areas:
+    "colleft title title title spacer col1 colright"
+    "colleft message message message spacer col2 colright"
+    "colleft bottom bottom bottom spacer col3 colright";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  position: fixed;
+  width: 100%;
+  height: 30%;
+  top: 70vh;
+  z-index: 100;
+}
+
+.cookie-banner-message-container {
+background-color: blue;
+display: grid;
+grid-area: message;
+}
 
 
 /* 490px media queries start */
