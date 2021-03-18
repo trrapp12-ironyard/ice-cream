@@ -169,7 +169,7 @@
         </div>
       </div>
     </div>
-    <div class="cookie-banner-container">
+    <div class="cookie-banner-container" id="cookieBannerContainer">
       <div class="cookie-banner-message-container">
         <div class="cookie-message cookie-title">
           <h3>Sundae Worship Cookie Policy</h3>
@@ -177,9 +177,9 @@
         </div>
       </div>
       <div class="cookie-policy-button-container">
-        <div class="cookie-policy-button">View Policies</div>
-        <div class="cookie-policy-button">Agree</div>
-        <div class="cookie-policy-button">Disagree</div>
+        <div class="cookie-policy-button" id="cookie-policy-button-view-policies">View Policies</div>
+        <div class="cookie-policy-button" id="cookie-policy-button-agree">Agree</div>
+        <div class="cookie-policy-button" id="cookie-policy-button-disagree">Disagree</div>
       </div>
     </div>
   </body>
@@ -394,7 +394,47 @@
   <script>
   (() => {
     window.addEventListener('DOMContentLoaded', () => {
-      // alert("space holder for cookie needs to get filled out")
+      //grab cookie
+      var cookieData = document.cookie;
+      var userIdDate = new Date();
+      var userid = "ABCD1234";
+      // select button elements
+      var policyButton = document.querySelector("#cookie-policy-button-view-policies");
+      var agreeButton = document.querySelector("#cookie-policy-button-agree");
+      var disagreeButton = document.querySelector("#cookie-policy-button-disagree");
+      // set animate function
+      function animateBanner () {
+        var banner = document.querySelector('cookieBannerContainer');
+        banner.style.transitionDuration = "300ms";
+        banner.style.transitionTimingFunction = "linear";
+        banner.style.width = "100%";
+        banner.style.display = "grid"
+      }
+      // make set cookie function
+      function setCookie (name, state, id, days) {
+        var expires = '';
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + "=" + state + expires + "; path=/";
+      };
+      // function to get cookie
+      function getCookie (cookieData) {
+        var cookieSplit = cookieData.split(';');
+        for (var i = 0 ; i < cookieSplit.length; i++) {
+          // do something here
+        }
+      }
+      // logical check to see if the policy has been agreed to
+      if (cookieData.contains("state=1")) {
+        break
+      } else {
+        policyButton.addEventListener('click', () => {});
+        agreeButton.addEventListener('click', setCookie ("Sundae Worship", 1, userid, 7));
+        disagreeButton.addEventListener('click', window.location = "sundae-worship/contact");
+      }
     })
   })();
   </script>
