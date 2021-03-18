@@ -780,7 +780,7 @@ td {
 
 .cookie-icon > .fas:before, .fa:before {
   display: inline-block;
-  color: gray;
+  color: rgb(147 117 235);
   font-size: 3em;
 }
 
@@ -799,13 +799,13 @@ td {
     "colleft title title title spacer col1 colright"
     "colleft message message message spacer col2 colright"
     "colleft bottom bottom bottom spacer col3 colright";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 5fr 1fr;
   position: fixed;
   width: 100%;
   height: 30%;
   top: 70vh;
-  z-index: 100;
+  z-index: 300;
 }
 
 .cookie-banner-message-container {
@@ -829,9 +829,54 @@ grid-area: message;
   padding: 20%;
   margin: auto;
 }
+.cookie-policy-button-container {
+  display: grid;
+  background-color: yellow;
+  grid-area: col2;
+  grid-template-areas:
+    "policy-button"
+    "agree-button"
+    "disagree-button";
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px; 
+
+}
+.cookie-policy-button {
+  display: grid;
+  grid-area:
+  border-radius: 25px;
+  background-color: green;
+  align-self: center;
+  justify-self: center;
+
+}
+
+.cookie-agree-button {
+  display: grid;
+  grid-area:
+  border-radius: 25px;
+  background-color: green;
+  align-self: center;
+  justify-self: center;
+
+}
+
+.cookie-disagree-button {
+  display: grid;
+  grid-area:
+  border-radius: 25px;
+  background-color: green;
+  align-self: center;
+  justify-self: center;
+
+}
 
 .cookie-message {
   font-family: "Quicksand", sans-serif;
+  color: gray;
+  padding: 2rem;
+  font-size: 1em;
 }
 
 .cookie-message > h3 {
