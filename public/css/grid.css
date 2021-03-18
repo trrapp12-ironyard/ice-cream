@@ -793,7 +793,7 @@ td {
 }
 
 .cookie-banner-container {
-  background-color: red;
+  backdrop-filter: blur(6px);
   display: grid;
   grid-template-areas:
     "colleft title title title spacer col1 colright"
@@ -809,7 +809,7 @@ td {
 }
 
 .cookie-banner-message-container {
-  background-color: blue;
+  background-color: #ffffff5c;
   display: grid;
   grid-area: message;
 }
@@ -831,7 +831,6 @@ td {
 }
 
 .cookie-policy-button-container {
-  background-color: yellow;
   display: grid;
   grid-area: col2;
   grid-template-areas:
@@ -845,33 +844,29 @@ td {
 
 .cookie-policy-button {
   align-self: center;
-  background-color: green;
+  background-color: #ffffff5c;
+  border: solid white;
   border-radius: 25px;
+  color: #636363;
   display: grid;
   justify-self: center;
-}
-
-.cookie-agree-button {
-  align-self: center;
-  background-color: green;
-  border-radius: 25px;
-  display: grid;
-  justify-self: center;
-}
-
-.cookie-disagree-button {
-  align-self: center;
-  background-color: green;
-  border-radius: 25px;
-  display: grid;
-  justify-self: center;
+  min-width: 6em;
+  padding: 1em;
+  text-align: center;
 }
 
 .cookie-message {
-  color: gray;
+  color: #636363;
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
   padding: 2rem;
+  border: double;
+  border-color: white;
+  border-width: 1vw;
+}
+
+.cookie-message-buffer{
+  margin-top: 2vw;
 }
 
 .cookie-message > h3 {
@@ -885,7 +880,9 @@ td {
   margin-left: 2rem;
 }
 
-
+.cookie-title > h3{
+  margin-left: 0;
+}
 /* 490px media queries start */
 @media (max-width: 490px) {
   .nav-li-left {
