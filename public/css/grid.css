@@ -855,6 +855,12 @@ td {
   text-align: center;
 }
 
+.cookie-policy-button:hover {
+  background-color: rgba(147, 117, 235, 0.4);
+  background-color: rgb(147, 117, 235)
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
 .cookie-message {
   color: #636363;
   font-family: "Quicksand", sans-serif;
