@@ -5,15 +5,28 @@
   padding: 0;
 }
 
+h1 {
+  color: white;
+  font-family: "Josefin Slab", serif;
+  font-size: 6em;
+  font-weight: bolder;
+  line-height: 220px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 20px black;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
 html {
   min-width: fit-content;
   scroll-behavior: smooth;
 }
 
 /* body.css */
-.reey-signature {
-  font-family: "reeyregular", Arial, sans-serif;
-}
+
+
 .cookie-icon {
   margin: 1rem;
   margin-top: 5rem;
@@ -135,4 +148,16 @@ html {
 
 .cookie-title > h3 {
   margin-left: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+.reey-signature {
+  font-family: "reeyregular", Arial, sans-serif;
+  font-size: 3em;
+}
+
+ul {
+  padding: 1em; 
 }
