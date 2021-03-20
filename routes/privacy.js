@@ -6,11 +6,11 @@ const rootDir = require('../util/path');
 
 const router = express.Router();
 
-router.get('/contact', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'contact.html'));
+router.get('/privacy', (req, res, next) => {
+  res.sendFile(path.join(rootDir, 'views', 'privacy.html'));
 });
 
-router.post('/contact', (req, res, next) => {
+router.post('/privacy', (req, res, next) => {
   console.log(req.body);
   res.redirect('/');
 });

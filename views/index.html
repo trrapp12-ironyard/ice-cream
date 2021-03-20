@@ -173,7 +173,7 @@
       <div class="cookie-banner-message-container">
         <div class="cookie-message cookie-title">
           <h3>Sundae Worship Cookie Policy</h3>
-          <p class="cookie-message-buffer">We get it.  We're excited you came to our party!  But no one wants any to be all up in their biz'ness.  So here's the "dl" on what cookies we use and how we guard your privacy.  Cuz' we all know what the first rule about fight club is."
+          <p class="cookie-message-buffer">We get it.  We're excited you came to our party!  But no one wants anybody to be all up in their biz'ness.  So here's the "dl" on what cookies we use and how we guard your privacy.  Cuz' we all know what the first rule about fight club is."
         </div>
       </div>
       <div class="cookie-policy-button-container">
@@ -399,9 +399,9 @@
       var userIdDate = new Date();
       var userid = "ABCD1234";
       // select button elements
-      var policyButton = document.querySelector("#cookie-policy-button-view-policies");
-      var agreeButton = document.querySelector("#cookie-policy-button-agree");
-      var disagreeButton = document.querySelector("#cookie-policy-button-disagree");
+      document.querySelector("#cookie-policy-button-view-policies").addEventListener('click', () => {console.log("view policies button clicked"); window.location = "privacy.html"});;
+      document.querySelector("#cookie-policy-button-agree").addEventListener('click', setCookie ("Sundae Worship", 1, userid, 7));
+      document.querySelector("#cookie-policy-button-disagree").addEventListener('click', () => { });;
       // set animate function
       function animateBanner () {
         var banner = document.querySelector('cookieBannerContainer');
@@ -429,11 +429,9 @@
       }
       // logical check to see if the policy has been agreed to
       if (cookieData.contains("state=1")) {
-        break
+        return
       } else {
-        policyButton.addEventListener('click', () => {});
-        agreeButton.addEventListener('click', setCookie ("Sundae Worship", 1, userid, 7));
-        disagreeButton.addEventListener('click', window.location = "sundae-worship/contact");
+
       }
     })
   })();

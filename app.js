@@ -12,7 +12,7 @@ const adminRoutes = require('./routes/admin');
 
 const shopRoutes = require('./routes/shop');
 
-const contactRoutes = require('./routes/shop');
+const privacyRoutes = require('./routes/privacy');
 
 //this is middle ware to parse the body for POST requests.  It will not work on files or JSON.  Notice we are using the app object now and using dot notation to call the needed methods
 app.use(bodyParser.urlencoded({extended: false}));
@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/admin', adminRoutes);
 app.use('/shop', shopRoutes);
-app.use('/contact', contactRoutes);
+app.use('/privacy', privacyRoutes);
 app.use('/', indexRoutes);
 
 app.use((req, res, next) => {
