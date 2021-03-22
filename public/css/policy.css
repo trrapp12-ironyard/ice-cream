@@ -14,7 +14,7 @@ h1 {
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-shadow: 1px 1px 20px black;
+  text-shadow: 1px 1px 20px rgb(0 0 0 / 20%);
   width: 100%;
   margin-bottom: 1em;
 }
@@ -25,9 +25,6 @@ html {
 }
 
 /* body.css */
-body {
-  background-image: url(./public/images/pexels-somben-chea-1294943.jpg);
-}
 
 .cookie-icon {
   margin: 1rem;
@@ -40,11 +37,10 @@ body {
 }
 
 .cookie-icon > .fas:before, .fa:before {
-  color: rgb(147 117 235);
+  color: #DAB8FC;
   display: inline-block;
   font-size: 3em;
 }
-
 .cookie-h3 {
   display: inline-block;
   font-size: 2em;
@@ -83,6 +79,11 @@ body {
   top: 0;
   width: 100%;
   z-index: 200;
+  background-image: url(../images/sombenchea1294943.jpg);
+  background-color: #FDECD2;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .cookie-policy-message-container {
