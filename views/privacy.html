@@ -127,6 +127,7 @@
               <div class="cookie-icon">
                 <i class="fas fa-gavel"></i><h3 class="cookie-h3">Your Rights and Controlling Your Personal Information</h3>
               </div>
+              <div class="circle-edges"></div>
                 <br>
               <p>You always retain the right to withhold personal information from us, with the understanding that your experience of our website may be affected. We will not discriminate against you for exercising any of your rights over your personal information. If you do provide us with personal information you understand that we will collect, hold, use and disclose it in accordance with this privacy policy. You retain the right to request details of any personal information we hold about you.</p>
                 <br>
@@ -176,8 +177,23 @@
         </div>
     </div>
   </div>
-
   <script src="js/script.js"></script>
+  <script>
+  (() => {
+    function changeColor () {
+      var text = document.getElementsByTagName('p')
+      // .style.transitionDuration = "3s";
+      // document.getElementsByTagName('p').style.color = "white";
+      for (var i = 0; i < text.length; i++) {
+        text.style.transitionDuration = "3s";
+        text.style.color = "white";
+      }
+    };
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(changeColor, 3000);
+    })
+  })();
+  </script>
 </body>
 
 </html>

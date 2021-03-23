@@ -37,9 +37,10 @@ html {
 }
 
 .cookie-icon > .fas:before, .fa:before {
-  color: #DAB8FC;
+  color: white;
   display: inline-block;
   font-size: 3em;
+  text-shadow: 1px 1px 20px rgb(0 0 0 / 20%);
 }
 .cookie-h3 {
   display: inline-block;
@@ -79,17 +80,21 @@ html {
   top: 0;
   width: 100%;
   z-index: 200;
-  background-image: url(../images/sombenchea1294943.jpg);
-  background-color: #FDECD2;
+  background-image: url(../images/dinanasyrova3825995.jpg), linear-gradient(to right top, #babdc6, #c0c2cb, #c5c6cf, #cbcbd3, #d0d0d8, #d4d3db, #d7d6de, #dbd9e1, #dedbe3, #e1dee5, #e3e0e8, #e6e3ea);
   background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
+  background-blend-mode: darken;
+  background-size: contain;
 }
 
 .cookie-policy-message-container {
   margin: auto;
-  padding: 20%;
-  width: 55%;
+  width: 62%;
+  padding-top: 14%;
+  margin-right: 27%;
+  margin-left: auto;
+  padding-bottom: 14%;
 }
 
 .cookie-policy-button-container {
@@ -128,10 +133,22 @@ html {
   color: #636363;
   font-family: "Quicksand", sans-serif;
   font-size: 1em;
-  padding: 2rem;
+  padding: 4rem;
   border: double;
   border-color: white;
   border-width: 1vw;
+}
+
+.cookie-message:hover {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  padding: 4rem;
+  border: double;
+  border-color: white;
+  border-width: 1vw;
+  /* transition-delay: 1000ms; */
+  transition-duration: 4000ms;
 }
 
 .cookie-message-buffer{
