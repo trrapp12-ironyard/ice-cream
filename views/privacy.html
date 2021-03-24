@@ -214,19 +214,20 @@
 
       function changeColor(el, height) {
         for (var i = 0; i < el.length; i++) {
-          if (((window.scrollY - el[i].getBoundingClientRect().top) < (screenHeight / 3)) || ((window.scrollY - el[i].getBoundingClientRect().top) > (screenHeight * .666))) {
-            el[i].style.transitionDuration = "4s";
-            el[i].style.color = "white";
+          if (((window.scrollY - el[i].getBoundingClientRect().top) < ((screenHeight + window.scrollY) / 3)) || ((window.scrollY - el[i].getBoundingClientRect().top) > ((screenHeight + window.scrollY) * .666))) {
+            el[i].style.transitionDuration = ".5s";
+            el[i].style.color = "purple";
             el[i].transitionTimingDuration = "ease";
           } else {
-            el[i].style.transitionDuration = "4s";
-            el[i].style.color = "#636363";
+            el[i].style.transitionDuration = ".5s";
+            // el[i].style.color = "#636363";
+            el[i].style.color = "white";
             el[i].transitionTimingDuration = "ease";
           }
         }
       }
 
-    setTimeout(changeColor(text, screenHeight), 3000);
+    setTimeout(changeColor(text, screenHeight), 1000);
 
     })
   })();
