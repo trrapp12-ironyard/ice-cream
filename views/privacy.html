@@ -178,19 +178,56 @@
     </div>
   </div>
   <script src="js/script.js"></script>
+  <!-- <script>
+  (() => { window.addEventListener('DOMContentLoaded', () => {
+
+    var screenHeight = window.screen.availHeight;
+    console.log(screenHeight);
+
+    var text = document.getElementsByTagName('p');
+
+    function changeColor (el) {
+        // .style.transitionDuration = "3s";
+        // document.getElementsByTagName('p').style.color = "white";
+        for (var i = 0; i < el.length; i++) {
+        if ((window.scrollY + el.getBoundingClientRect().top) > (screenHeight / 3)) {
+          el.style.transitionDuration = "3s";
+          el.style.color = "white";
+        } else {
+          el.style.transitionDuration = "3s";
+          el.style.color = "#636363";
+      }
+    }
+  };
+    setTimeout(changeColor(text), 3000);
+}
+
+  })();
+
+
+  </script> -->
   <script>
   (() => {
-    function changeColor () {
-      var text = document.getElementsByTagName('p')
-      // .style.transitionDuration = "3s";
-      // document.getElementsByTagName('p').style.color = "white";
-      for (var i = 0; i < text.length; i++) {
-        text.style.transitionDuration = "3s";
-        text.style.color = "white";
+    document.addEventListener('scroll', () => {
+      var screenHeight = window.screen.availHeight;
+      var text = document.querySelectorAll('p, ul');
+
+      function changeColor(el, height) {
+        for (var i = 0; i < el.length; i++) {
+          if (((window.scrollY - el[i].getBoundingClientRect().top) < (screenHeight / 3)) || ((window.scrollY - el[i].getBoundingClientRect().top) > (screenHeight * .666))) {
+            el[i].style.transitionDuration = "4s";
+            el[i].style.color = "white";
+            el[i].transitionTimingDuration = "ease";
+          } else {
+            el[i].style.transitionDuration = "4s";
+            el[i].style.color = "#636363";
+            el[i].transitionTimingDuration = "ease";
+          }
+        }
       }
-    };
-    window.addEventListener('DOMContentLoaded', () => {
-      setTimeout(changeColor, 3000);
+
+    setTimeout(changeColor(text, screenHeight), 3000);
+
     })
   })();
   </script>

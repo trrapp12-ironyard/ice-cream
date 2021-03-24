@@ -137,6 +137,7 @@ html {
   border: double;
   border-color: white;
   border-width: 1vw;
+  transition-duration: 4000ms;
 }
 
 .cookie-message:hover {
