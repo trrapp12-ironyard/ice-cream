@@ -807,16 +807,35 @@ td {
   top: 70vh;
   width: 100%;
   z-index: 300;
-  animation: slide_left 3s ease-in 1s;
+}
+
+.cookie-banner-container-hidden {
+  animation: slide_left 1.5s ease-in 1s;
+  backdrop-filter: blur(6px);
+  display: grid;
+  grid-template-areas:
+    "colleft title title title spacer col1 colright"
+    "colleft message message message spacer col2 colright"
+    "colleft bottom bottom bottom spacer col3 colright";
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  height: 30%;
+  position: fixed;
+  top: 70vh;
+  width: 100%;
+  z-index: 300;
 }
 
 @keyframes slide_left {
   0% {
-    transform: translateX(0vw);
+    transform: translateX(0vw) rotate3d(0);
   }
 
   100% {
-    transform: translateX(-100vw);
+    transform: rotate3d(1, 0, 0, 100deg);
+    transform-origin: bottom;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
@@ -825,6 +844,7 @@ td {
   display: grid;
   grid-area: message;
 }
+
 
 .cookie-policy-container {
   background-color: white;
@@ -841,6 +861,7 @@ td {
   padding: 20%;
   width: 55%;
 }
+
 
 .cookie-policy-button-container {
   display: grid;

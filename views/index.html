@@ -398,18 +398,12 @@
       var cookieData = document.cookie;
       var userIdDate = new Date();
       var userid = "ABCD1234";
+      const cookieContainer = document.querySelector("#cookieBannerContainer");
       // select button elements
       document.querySelector("#cookie-policy-button-view-policies").addEventListener('click', () => {console.log("view policies button clicked"); window.location = "privacy"});;
       document.querySelector("#cookie-policy-button-agree").addEventListener('click', setCookie ("Sundae Worship", 1, userid, 7));
-      document.querySelector("#cookie-policy-button-disagree").addEventListener('click', () => { });;
-      // set animate function
-      function animateBanner () {
-        var banner = document.querySelector('cookieBannerContainer');
-        banner.style.transitionDuration = "300ms";
-        banner.style.transitionTimingFunction = "linear";
-        banner.style.width = "100%";
-        banner.style.display = "grid"
-      }
+      document.querySelector("#cookie-policy-button-disagree").addEventListener('click', makeBannerDisappear);
+
       // make set cookie function
       function setCookie (name, state, id, days) {
         var expires = '';
@@ -427,12 +421,22 @@
           // do something here
         }
       }
-      // logical check to see if the policy has been agreed to
-      if (cookieData.contains("state=1")) {
-        return
-      } else {
 
+      function makeBannerDisappear () {
+        // cookieContainer.style.transform = "rotate3d(0, 1, 0, 180deg)";
+        // cookieContainer.style.transformOrigin = "bottom";
+        cookieContainer.style.transform = "translate(-100vw, 0)";
+        cookieContainer.style.opacity = "0";
+        cookieContainer.style.transitionDuration = "1290ms";
+        cookieContainer.style.transitionTimingFunction = "ease-in"
       }
+      // logical check to see if the policy has been agreed to
+      // if (cookieData.contains("state=1")) {
+      //
+      //   return
+      // } else {
+      //
+      // }
     })
   })();
   </script>
