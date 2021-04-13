@@ -138,6 +138,7 @@ ul {
   grid-template-rows: 33% 33% 33%;
   height: 126%;
   position: relative;
+
 }
 
 .home {
@@ -806,6 +807,17 @@ td {
   top: 70vh;
   width: 100%;
   z-index: 300;
+  animation: slide_left 3s ease-in 1s;
+}
+
+@keyframes slide_left {
+  0% {
+    transform: translateX(0vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
 }
 
 .cookie-banner-message-container {
@@ -876,7 +888,7 @@ td {
   background-color: rgba(147, 117, 235, 0.4);
   background-color: rgb(147, 117, 235)
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-  color: white; 
+  color: white;
 }
 
 .cookie-message-buffer{

@@ -209,12 +209,26 @@
   <script>
   (() => {
     document.addEventListener('scroll', () => {
-      var screenHeight = window.screen.availHeight;
-      var text = document.querySelectorAll('p, ul');
+      // establish variables
+      const topThird = (window.screen.availHeight * (1 / 3));
+      const bottomThird = (window.screen.availHeight * (2 / 3));
+      const text = document.querySelectorAll('p, ul');
+      //establish functions
 
-      function changeColor(el, height) {
+      function changeColor(el, bottomLimit, topLimit) {
+      var firstEl = el[0].tagName;
+      // console.log("bottom Limit is: " + bottomLimit + ", and top Limit is: " + topLimit);
+      var testTopBound = el[0].getBoundingClientRect().top;
+      // console.log("top is: " + testTopBound);
+      var testBottomBound = el[0].getBoundingClientRect().bottom;
+      var testScrollY = window.scrollY;
+      // console.log("window scrollY is: " + testScrollY);
+
+      console.table([firstEl, testTopBound, topLimit, testBottomBound, bottomLimit]);
         for (var i = 0; i < el.length; i++) {
-          if (((window.scrollY - el[i].getBoundingClientRect().top) < ((screenHeight + window.scrollY) / 3)) || ((window.scrollY - el[i].getBoundingClientRect().top) > ((screenHeight + window.scrollY) * .666))) {
+
+        // window.scrollY returns the distance in pixels from wherever the top edge of the viewport is to the beginning of the DOM.  So the further you scroll down the higher the number
+            if ((el[i].getBoundingClientRect().top > (window.scrollY + topLimit)) && (el[i].getBoundingClientRect().bottom < (window.scrollY + bottomLimit))) {
             el[i].style.transitionDuration = ".5s";
             el[i].style.color = "purple";
             el[i].transitionTimingDuration = "ease";
@@ -226,10 +240,8 @@
           }
         }
       }
-
-    setTimeout(changeColor(text, screenHeight), 1000);
-
-    })
+      changeColor(text, bottomThird, topThird);
+    });
   })();
   </script>
 </body>
