@@ -399,6 +399,9 @@
       var userIdDate = new Date();
       var userid = "ABCD1234";
       const cookieContainer = document.querySelector("#cookieBannerContainer");
+      const topButton = document.getElementById("cookie-policy-button-view-policies");
+      const middleButton = document.getElementById("cookie-policy-button-agree");
+      const bottomButton = document.getElementById("cookie-policy-button-disagree");
       // select button elements
       document.querySelector("#cookie-policy-button-view-policies").addEventListener('click', () => {console.log("view policies button clicked"); window.location = "privacy"});;
       document.querySelector("#cookie-policy-button-agree").addEventListener('click', setCookie ("Sundae Worship", 1, userid, 7));
@@ -423,13 +426,19 @@
       }
 
       function makeBannerDisappear () {
-        // cookieContainer.style.transform = "rotate3d(0, 1, 0, 180deg)";
-        // cookieContainer.style.transformOrigin = "bottom";
-        cookieContainer.style.transform = "translate(-100vw, 0)";
-        cookieContainer.style.opacity = "0";
-        cookieContainer.style.transitionDuration = "1290ms";
-        cookieContainer.style.transitionTimingFunction = "ease-in"
+
+        // cookieContainer.style.transform = "translate(-100vw, 0)";
+        // cookieContainer.style.opacity = "0";
+        // cookieContainer.style.transitionDuration = "1290ms";
+        // cookieContainer.style.transitionTimingFunction = "ease-in"
+
+        topButton.style.cssText = "animation: exampleAnimation 5s ease-in 0s; transform: translateY(-10px); background-color: rgba(147, 117, 235, 0.4); min-width: 0em; content-visibility: hidden;"
+        middleButton.style.cssText = "animation: exampleAnimation2 5s ease-in 0s; transform: translateY(-10px); background-color: rgba(147, 117, 235, 0.4); min-width: 0em; content-visibility: hidden;"
+        bottomButton.style.cssText = "animation: exampleAnimation3 5s ease-in 0s; transform: translateY(-10px); background-color: rgba(147, 117, 235, 0.4); min-width: 0em; content-visibility: hidden;"
+
       }
+
+
       // logical check to see if the policy has been agreed to
       // if (cookieData.contains("state=1")) {
       //
